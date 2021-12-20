@@ -1,0 +1,10 @@
+git clone git@github.com:asu-axelor/Training.git
+git remote add upstream git@github.com:rch-axelor/Training.git
+git branch wip-asu
+git checkout wip-asu
+mkdir ASU
+vim a1.sh
+get add a1.sh
+git add a1.sh
+git commit -m "New file"        
+git push origin wip-asu
