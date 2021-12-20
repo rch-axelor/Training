@@ -1,4 +1,11 @@
 #!/bin/bash
+/*Create one script to achieve following requirement 
+
+fetch all the files recursively from the specified directory Path in argument 
+check if the file is xml then copy it in directory named "xml" in current directory. 
+check if filename contains any special character rename it to only alphanumeric name (means remove all special character from fileName)
+check which file contains emailAddress and list out all those file names in file named "EmailAddressFiles.txt" and those emailAddress in file named "EmailAddresses.txt" in current directory. 
+& replace @gmail.com in all emailAddresses in all files with @axelor.com.*/
 read -p "Please Enter Path:" r1
 for i in $(dir "$r1");do echo $i;done
 cd $r1
