@@ -1,0 +1,26 @@
+diff --git a/n.txt b/n.txt
+index e6d1ca3..81454c9 100644
+--- a/n.txt
++++ b/n.txt
+@@ -16,3 +16,21 @@
+ ##change last commit message.
+ ##reset last commit in local & update the text file with next executed commands. 
+ ##and commit those changes & push it to the same PR.
++
++
++git clone git@github.com:bvs-axelor/Training.git origin
++ls origin
++git clone git@github.com:rch-axelor/Training.git upstream
++git branch wip-bharath
++git checkout wip-bharath
++mkdir bharath
++cd bharath
++touch LinuxCommandExercise.sh
++cd ..
++git commit -m"Linux command exercise"
++git status
++git add bharath
++git status
++vi new.txt
++sed 's/^/#/' new.txt > n.txt
++cat n.txt
