@@ -19,3 +19,5 @@ git push origin wip-shilpa
 git diff >patch1.patch
 
 git diff >patch2.patch
+
+git reset HEAD~
