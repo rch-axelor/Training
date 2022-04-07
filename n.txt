@@ -34,3 +34,19 @@ git status
 vi new.txt
 sed 's/^/#/' new.txt > n.txt
 cat n.txt
+rm new.txt
+git status
+git add -A
+git commit -m"Linux command exercise 1
+git diff > p1.patch
+vi n.txt
+git diff
+git commit -m"Linux command exercise 2"
+git diff > p2.patch
+git add -A
+git commit -m"all done"
+gitcommit --amend -m "New commit message."
+git log
+git reset wip-bharath
+ls
+
