@@ -15,3 +15,7 @@ git add .
 git commit -m 'Linux command exercise'
 
 git push origin wip-shilpa
+
+git diff >patch1.patch
+
+git diff >patch2.patch
