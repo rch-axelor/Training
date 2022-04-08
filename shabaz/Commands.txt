@@ -1,0 +1,21 @@
+Commands used:
+$ git remote set-url origin git@github.com:sma-axelor/Training.git
+$ git remote add upstream https://github.com/rch-axelor/Training.git
+$ git remote -v
+$ git checkout -b wip-shabaz
+$ mkdir shabaz
+$ cd shabaz
+$ touch LinuxCommandExercise.sh$
+$ xdg-open LinuxCommandExercise.sh
+$ git add .
+$ git status
+$ git commit -m "Linux command exercise edited"
+$ git push origin wip-shabaz
+$ git touch Question.sh
+$ git touch Commands.txt
+$ xdg-open Commands.txt
+$ xdg-open Question.sh
+$ git add Question.sh
+$ git commit -m "Added Question.sh" 
+$ xdg-open Commands.sh
+$ git add Commands.txt

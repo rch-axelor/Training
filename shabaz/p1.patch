@@ -1,0 +1,9 @@
+diff --git a/shabaz/Commands.txt b/shabaz/Commands.txt
+index eb5df2f..f661cdd 100644
+--- a/shabaz/Commands.txt
++++ b/shabaz/Commands.txt
+@@ -18,3 +18,4 @@ $ xdg-open Question.sh
+ $ git add Question.sh
+ $ git commit -m "Added Question.sh" 
+ $ xdg-open Commands.sh
++$ git add Commands.txt
