@@ -24,4 +24,12 @@ $ cat p1.patch
 $ git add .
 $ git commit -a -m "Added p1.patch"
 $ xdg-open Commands.txt
-
+$ git diff > p2.patch
+$ cat p2.patch
+$ git add .
+$ git commit -m "Added p2.patch"
+$ git push origin wip-shabaz
+$ git commit --amend
+$ git add .
+$ git commit -m "Added new cmds to Commands.txt"
+$ git push origin wip-shabaz
