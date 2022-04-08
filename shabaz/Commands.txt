@@ -19,3 +19,9 @@ $ git add Question.sh
 $ git commit -m "Added Question.sh" 
 $ xdg-open Commands.sh
 $ git add Commands.txt
+$ git diff> p1.patch
+$ cat p1.patch
+$ git add .
+$ git commit -a -m "Added p1.patch"
+$ xdg-open Commands.txt
+
