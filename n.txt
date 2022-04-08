@@ -16,6 +16,7 @@
 ##change last commit message.
 ##reset last commit in local & update the text file with next executed commands. 
 ##and commit those changes & push it to the same PR.
+<<<<<<< HEAD
 
 
 git clone git@github.com:bvs-axelor/Training.git origin
@@ -50,3 +51,5 @@ git log
 git reset wip-bharath
 ls
 lak
+=======
+>>>>>>> bd317d5 (Linux command exercise 1)
