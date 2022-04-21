@@ -1,0 +1,31 @@
+tasks.register('printProps') {
+    doLast {
+        println commandLineProjectProp
+        println gradlePropertiesProp
+        println systemProjectProp
+        println System.properties['system']
+    }
+}
+tasks.register("hello"){
+    doLast {
+        println("Hello Gradle")
+    }
+}
+tasks.register("countdown") {
+    println("This is the configuration phase")
+
+    doFirst {
+        println("3")
+    }
+    doFirst {
+        println("This is the execution phase")
+        println("4")
+    }
+
+    doLast {
+        println("2")
+    }
+    doLast {
+        println("1")
+    }
+}
