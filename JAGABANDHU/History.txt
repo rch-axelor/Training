@@ -1,0 +1,37 @@
+
+ 1001  git clone git@github.com:jka-axelor/Training.git
+ 1002  ls 
+ 1003  cd Training
+ 1004  cat README.MD
+ 1005  cat README.md
+ 1006  git remote -v 
+ 1007  gti remote upstrem add origin git@github.com:jka-axelor/Training.git
+ 1008  git remote upstrem add origin git@github.com:jka-axelor/Training.git
+ 1009  git remote upstream add origin git@github.com:jka-axelor/Training.git
+ 1010  git remote upstream add git@github.com:jka-axelor/Training.git
+ 1011  git remote add upstream git@github.com:jka-axelor/Training.git
+ 1012  git remote -v
+ 1013  git checkout -b wip-jagabandhu
+ 1014  mkdir jaga
+ 1015  LS
+ 1016  cd JAGABANDHU/
+ 1017  ls -a
+ 1018  git add LinuxCommandExercise.sh
+ 1019  gti commit -m "Linux command exercise"
+ 1020  git commit -m "Linux command exercise"
+ 1021  git log
+ 1022  git remote -v
+ 1023  git remote add origin git@github.com:jka-axelor/Training.git
+ 1024  git push origin wip-jagabandhu
+ 1025  git log
+ 1026  git branch -m wip-JAGABANDHUKAR
+ 1027  git branch
+ 1028  git push origin wip-JAGABANDHUKAR
+ 1029  git status
+ 1030  cat LinuxCommandExercise.sh
+ 1031  vi LinuxCommandExercise.sh
+ 1032  cat LinuxCommandExercise.sh
+ 1033  git diff > mypatch1.patch
+ 1034  ls 
+ 1035  cat mypatch1.patch
+ 1036  history > History.txt
