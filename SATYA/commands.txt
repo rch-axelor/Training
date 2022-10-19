@@ -1,0 +1,67 @@
+List of commands I used till now is listed below : 
+1) git clone git@github.com:rch-axelor/Training.git (to clone repo into my system)
+2) cd Training (to go inside Training dir)
+3) git remote -v (to checking the existing origin and upstream)
+4) git remote set-url origin git@github.com:sda-axelor/Training.git (to set origin)
+5) git remote set-url upstream git@github.com:rch-axelor/Training.git ( to set upstream)
+6) git remote -v (to checking again the existing origin and upstream)
+7) git branch ( to check existing branch)
+8) git branch wip-satya ( to make a branch named wip-satya)
+9) mkdir SATYA ( make a dir of my name)
+10) cd SATYA ( Entering to that dir)
+11) touch LinuxCommandExercise.sh ( make an empty shell script file)
+12) git status ( to check status of the files) 
+13) git add LinuxCommandExercise.sh ( adding file to staging area)
+14) git commit -m "Linux command exercise" ( commit the file with msg)
+15) git status ( to check status of the files) 
+16) git log ( to view all commits)
+17) git push origin wip-satya (push the changes to origin from wip-satya branch)
+18) vi LinuxCommandExercise.sh ( open vi editor and write the question in multi-line comment)
+19) touch commands.txt ( create a txt file to write all executed commands inside it) 
+20) git diff > firstpatch.patch
+21) 
+
+# After update
+  808  cat firstpatch.patch 
+  809  git status
+  810  git add LinuxCommandExercise.sh 
+  811  )git status
+  812  git add commands.txt 
+  813  git status
+  814  git diff > secondpatch.patch
+  815  cat secondpatch.patch 
+  816  git status
+  817  cat secondpatch.patch 
+  818  git diff
+  819  git add firstpatch.patch 
+  820  git diff
+  821  git commit
+  822  git status
+  823  git add secondpatch.patch
+  824  git log
+  825  git reset --soft f4a4512
+  826  git status
+  827  git log
+  828  git reset f4a4512
+  829  git status
+  830  git log
+  831  git reset --soft 72fd6d7
+  832  git log
+  833  git status
+  834  git add.
+  835  git add .
+  836  git status
+  837  git commit -m "adding script, text and patch files"
+  838  git push origin wip-satya
+  839  git commit --ammend
+  840  git log
+  841  git commit --amend
+  842  git log
+  843  git reset e7e4f51
+  844  gti log 
+  845  git log
+  846  git reset 72fd6d7
+  847  git status
+  848  history
+
+
