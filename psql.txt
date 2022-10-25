@@ -1,0 +1,3244 @@
+axelor=# \c test2
+You are now connected to database "test2" as user "axelor".
+test2=# create table car (
+test2(# id bigserial primary key,
+test2(# make VARCHAR(100) not null,
+test2(# model VARCHAR(100) not null,
+test2(# price numeric(19 ,2) not null
+test2(# );
+CREATE TABLE
+test2=# insert into car (id, make, model, price) values (1, 'Lexus', 'ES', '$8.95');
+ERROR:  invalid input syntax for type numeric: "$8.95"
+LINE 1: ...(id, make, model, price) values (1, 'Lexus', 'ES', '$8.95');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (2, 'BMW', 'Z8', '$5.37');
+ERROR:  invalid input syntax for type numeric: "$5.37"
+LINE 1: ...r (id, make, model, price) values (2, 'BMW', 'Z8', '$5.37');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (3, 'Saab', '9-5', '$8.36');
+ERROR:  invalid input syntax for type numeric: "$8.36"
+LINE 1: ...(id, make, model, price) values (3, 'Saab', '9-5', '$8.36');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (4, 'Audi', '100', '$3.64');
+ERROR:  invalid input syntax for type numeric: "$3.64"
+LINE 1: ...(id, make, model, price) values (4, 'Audi', '100', '$3.64');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (5, 'Ford', 'Taurus', '$4.10');
+ERROR:  invalid input syntax for type numeric: "$4.10"
+LINE 1: ..., make, model, price) values (5, 'Ford', 'Taurus', '$4.10');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (6, 'BMW', '6 Series', '$8.66');
+ERROR:  invalid input syntax for type numeric: "$8.66"
+LINE 1: ... make, model, price) values (6, 'BMW', '6 Series', '$8.66');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (7, 'Chevrolet', 'Sportvan G30', '$2.99');
+ERROR:  invalid input syntax for type numeric: "$2.99"
+LINE 1: ...el, price) values (7, 'Chevrolet', 'Sportvan G30', '$2.99');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (8, 'Infiniti', 'EX', '$2.24');
+ERROR:  invalid input syntax for type numeric: "$2.24"
+LINE 1: ..., make, model, price) values (8, 'Infiniti', 'EX', '$2.24');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (9, 'Ford', 'E150', '$8.56');
+ERROR:  invalid input syntax for type numeric: "$8.56"
+LINE 1: ...id, make, model, price) values (9, 'Ford', 'E150', '$8.56');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (10, 'Mazda', 'Mazda6', '$0.80');
+ERROR:  invalid input syntax for type numeric: "$0.80"
+LINE 1: ...make, model, price) values (10, 'Mazda', 'Mazda6', '$0.80');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (11, 'Suzuki', 'Grand Vitara', '$9.99');
+ERROR:  invalid input syntax for type numeric: "$9.99"
+LINE 1: ...odel, price) values (11, 'Suzuki', 'Grand Vitara', '$9.99');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (12, 'Volkswagen', 'Passat', '$7.34');
+ERROR:  invalid input syntax for type numeric: "$7.34"
+LINE 1: ... model, price) values (12, 'Volkswagen', 'Passat', '$7.34');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (13, 'Toyota', 'Tacoma Xtra', '$6.57');
+ERROR:  invalid input syntax for type numeric: "$6.57"
+LINE 1: ...model, price) values (13, 'Toyota', 'Tacoma Xtra', '$6.57');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (14, 'Saab', '900', '$7.37');
+ERROR:  invalid input syntax for type numeric: "$7.37"
+LINE 1: ...id, make, model, price) values (14, 'Saab', '900', '$7.37');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (15, 'GMC', '1500', '$1.40');
+ERROR:  invalid input syntax for type numeric: "$1.40"
+LINE 1: ...id, make, model, price) values (15, 'GMC', '1500', '$1.40');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (16, 'Honda', 'Prelude', '$3.88');
+ERROR:  invalid input syntax for type numeric: "$3.88"
+LINE 1: ...ake, model, price) values (16, 'Honda', 'Prelude', '$3.88');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (17, 'Nissan', 'Maxima', '$6.23');
+ERROR:  invalid input syntax for type numeric: "$6.23"
+LINE 1: ...ake, model, price) values (17, 'Nissan', 'Maxima', '$6.23');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (18, 'Dodge', 'Dakota', '$1.42');
+ERROR:  invalid input syntax for type numeric: "$1.42"
+LINE 1: ...make, model, price) values (18, 'Dodge', 'Dakota', '$1.42');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (19, 'Buick', 'Regal', '$4.32');
+ERROR:  invalid input syntax for type numeric: "$4.32"
+LINE 1: ... make, model, price) values (19, 'Buick', 'Regal', '$4.32');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (20, 'Chevrolet', 'Venture', '$3.92');
+ERROR:  invalid input syntax for type numeric: "$3.92"
+LINE 1: ... model, price) values (20, 'Chevrolet', 'Venture', '$3.92');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (21, 'Oldsmobile', 'Aurora', '$4.78');
+ERROR:  invalid input syntax for type numeric: "$4.78"
+LINE 1: ... model, price) values (21, 'Oldsmobile', 'Aurora', '$4.78');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (22, 'Buick', 'LeSabre', '$6.95');
+ERROR:  invalid input syntax for type numeric: "$6.95"
+LINE 1: ...ake, model, price) values (22, 'Buick', 'LeSabre', '$6.95');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (23, 'Lexus', 'RX Hybrid', '$0.07');
+ERROR:  invalid input syntax for type numeric: "$0.07"
+LINE 1: ...e, model, price) values (23, 'Lexus', 'RX Hybrid', '$0.07');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (24, 'Pontiac', 'Turbo Firefly', '$6.98');
+ERROR:  invalid input syntax for type numeric: "$6.98"
+LINE 1: ...el, price) values (24, 'Pontiac', 'Turbo Firefly', '$6.98');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (25, 'Plymouth', 'Breeze', '$7.31');
+ERROR:  invalid input syntax for type numeric: "$7.31"
+LINE 1: ...e, model, price) values (25, 'Plymouth', 'Breeze', '$7.31');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (26, 'BMW', 'X6', '$9.07');
+ERROR:  invalid input syntax for type numeric: "$9.07"
+LINE 1: ... (id, make, model, price) values (26, 'BMW', 'X6', '$9.07');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (27, 'Ford', 'GT500', '$8.58');
+ERROR:  invalid input syntax for type numeric: "$8.58"
+LINE 1: ..., make, model, price) values (27, 'Ford', 'GT500', '$8.58');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (28, 'Pontiac', 'Grand Am', '$4.05');
+ERROR:  invalid input syntax for type numeric: "$4.05"
+LINE 1: ..., model, price) values (28, 'Pontiac', 'Grand Am', '$4.05');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (29, 'Subaru', 'Baja', '$9.60');
+ERROR:  invalid input syntax for type numeric: "$9.60"
+LINE 1: ... make, model, price) values (29, 'Subaru', 'Baja', '$9.60');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (30, 'Chrysler', 'Town & Country', '$5.50');
+ERROR:  invalid input syntax for type numeric: "$5.50"
+LINE 1: ..., price) values (30, 'Chrysler', 'Town & Country', '$5.50');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (31, 'Saturn', 'S-Series', '$1.25');
+ERROR:  invalid input syntax for type numeric: "$1.25"
+LINE 1: ...e, model, price) values (31, 'Saturn', 'S-Series', '$1.25');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (32, 'Chevrolet', 'Camaro', '$2.05');
+ERROR:  invalid input syntax for type numeric: "$2.05"
+LINE 1: ..., model, price) values (32, 'Chevrolet', 'Camaro', '$2.05');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (33, 'GMC', 'Savana 3500', '$4.98');
+ERROR:  invalid input syntax for type numeric: "$4.98"
+LINE 1: ...e, model, price) values (33, 'GMC', 'Savana 3500', '$4.98');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (34, 'BMW', '645', '$0.93');
+ERROR:  invalid input syntax for type numeric: "$0.93"
+LINE 1: ...(id, make, model, price) values (34, 'BMW', '645', '$0.93');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (35, 'Volkswagen', 'Cabriolet', '$3.04');
+ERROR:  invalid input syntax for type numeric: "$3.04"
+LINE 1: ...del, price) values (35, 'Volkswagen', 'Cabriolet', '$3.04');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (36, 'GMC', '3500', '$6.52');
+ERROR:  invalid input syntax for type numeric: "$6.52"
+LINE 1: ...id, make, model, price) values (36, 'GMC', '3500', '$6.52');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (37, 'Jeep', 'Cherokee', '$8.54');
+ERROR:  invalid input syntax for type numeric: "$8.54"
+LINE 1: ...ake, model, price) values (37, 'Jeep', 'Cherokee', '$8.54');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (38, 'Mazda', 'MX-5', '$7.68');
+ERROR:  invalid input syntax for type numeric: "$7.68"
+LINE 1: ..., make, model, price) values (38, 'Mazda', 'MX-5', '$7.68');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (39, 'Nissan', 'Quest', '$4.22');
+ERROR:  invalid input syntax for type numeric: "$4.22"
+LINE 1: ...make, model, price) values (39, 'Nissan', 'Quest', '$4.22');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (40, 'Mercury', 'Sable', '$1.78');
+ERROR:  invalid input syntax for type numeric: "$1.78"
+LINE 1: ...ake, model, price) values (40, 'Mercury', 'Sable', '$1.78');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (41, 'Chevrolet', 'Aveo', '$9.67');
+ERROR:  invalid input syntax for type numeric: "$9.67"
+LINE 1: ...ke, model, price) values (41, 'Chevrolet', 'Aveo', '$9.67');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (42, 'Kia', 'Rio', '$8.58');
+ERROR:  invalid input syntax for type numeric: "$8.58"
+LINE 1: ...(id, make, model, price) values (42, 'Kia', 'Rio', '$8.58');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (43, 'Subaru', 'Impreza', '$4.50');
+ERROR:  invalid input syntax for type numeric: "$4.50"
+LINE 1: ...ke, model, price) values (43, 'Subaru', 'Impreza', '$4.50');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (44, 'Ford', 'Laser', '$5.27');
+ERROR:  invalid input syntax for type numeric: "$5.27"
+LINE 1: ..., make, model, price) values (44, 'Ford', 'Laser', '$5.27');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (45, 'Mercedes-Benz', 'SL-Class', '$4.79');
+ERROR:  invalid input syntax for type numeric: "$4.79"
+LINE 1: ...l, price) values (45, 'Mercedes-Benz', 'SL-Class', '$4.79');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (46, 'Nissan', 'Quest', '$1.16');
+ERROR:  invalid input syntax for type numeric: "$1.16"
+LINE 1: ...make, model, price) values (46, 'Nissan', 'Quest', '$1.16');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (47, 'Chevrolet', 'Lumina APV', '$6.00');
+ERROR:  invalid input syntax for type numeric: "$6.00"
+LINE 1: ...del, price) values (47, 'Chevrolet', 'Lumina APV', '$6.00');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (48, 'Mercedes-Benz', 'CLS-Class', '$2.38');
+ERROR:  invalid input syntax for type numeric: "$2.38"
+LINE 1: ..., price) values (48, 'Mercedes-Benz', 'CLS-Class', '$2.38');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (49, 'Mazda', 'Miata MX-5', '$9.02');
+ERROR:  invalid input syntax for type numeric: "$9.02"
+LINE 1: ..., model, price) values (49, 'Mazda', 'Miata MX-5', '$9.02');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (50, 'Dodge', 'Grand Caravan', '$3.33');
+ERROR:  invalid input syntax for type numeric: "$3.33"
+LINE 1: ...odel, price) values (50, 'Dodge', 'Grand Caravan', '$3.33');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (51, 'Ford', 'Ranger', '$4.31');
+ERROR:  invalid input syntax for type numeric: "$4.31"
+LINE 1: ... make, model, price) values (51, 'Ford', 'Ranger', '$4.31');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (52, 'Volkswagen', 'GTI', '$2.72');
+ERROR:  invalid input syntax for type numeric: "$2.72"
+LINE 1: ...ke, model, price) values (52, 'Volkswagen', 'GTI', '$2.72');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (53, 'Buick', 'Century', '$5.04');
+ERROR:  invalid input syntax for type numeric: "$5.04"
+LINE 1: ...ake, model, price) values (53, 'Buick', 'Century', '$5.04');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (54, 'Chevrolet', 'Silverado 2500', '$7.28');
+ERROR:  invalid input syntax for type numeric: "$7.28"
+LINE 1: ... price) values (54, 'Chevrolet', 'Silverado 2500', '$7.28');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (55, 'Chevrolet', '1500', '$3.28');
+ERROR:  invalid input syntax for type numeric: "$3.28"
+LINE 1: ...ke, model, price) values (55, 'Chevrolet', '1500', '$3.28');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (56, 'Mercedes-Benz', '300SE', '$1.84');
+ERROR:  invalid input syntax for type numeric: "$1.84"
+LINE 1: ...odel, price) values (56, 'Mercedes-Benz', '300SE', '$1.84');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (57, 'Mazda', '626', '$0.43');
+ERROR:  invalid input syntax for type numeric: "$0.43"
+LINE 1: ...d, make, model, price) values (57, 'Mazda', '626', '$0.43');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (58, 'Volkswagen', 'Rabbit', '$3.01');
+ERROR:  invalid input syntax for type numeric: "$3.01"
+LINE 1: ... model, price) values (58, 'Volkswagen', 'Rabbit', '$3.01');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (59, 'Scion', 'tC', '$7.85');
+ERROR:  invalid input syntax for type numeric: "$7.85"
+LINE 1: ...id, make, model, price) values (59, 'Scion', 'tC', '$7.85');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (60, 'Hyundai', 'Equus', '$2.90');
+ERROR:  invalid input syntax for type numeric: "$2.90"
+LINE 1: ...ake, model, price) values (60, 'Hyundai', 'Equus', '$2.90');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (61, 'Lexus', 'GS', '$2.41');
+ERROR:  invalid input syntax for type numeric: "$2.41"
+LINE 1: ...id, make, model, price) values (61, 'Lexus', 'GS', '$2.41');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (62, 'Honda', 'Civic', '$3.40');
+ERROR:  invalid input syntax for type numeric: "$3.40"
+LINE 1: ... make, model, price) values (62, 'Honda', 'Civic', '$3.40');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (63, 'Nissan', 'Maxima', '$1.47');
+ERROR:  invalid input syntax for type numeric: "$1.47"
+LINE 1: ...ake, model, price) values (63, 'Nissan', 'Maxima', '$1.47');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (64, 'Eagle', 'Talon', '$4.66');
+ERROR:  invalid input syntax for type numeric: "$4.66"
+LINE 1: ... make, model, price) values (64, 'Eagle', 'Talon', '$4.66');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (65, 'Ford', 'Taurus', '$7.13');
+ERROR:  invalid input syntax for type numeric: "$7.13"
+LINE 1: ... make, model, price) values (65, 'Ford', 'Taurus', '$7.13');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (66, 'Volkswagen', 'Fox', '$7.56');
+ERROR:  invalid input syntax for type numeric: "$7.56"
+LINE 1: ...ke, model, price) values (66, 'Volkswagen', 'Fox', '$7.56');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (67, 'Land Rover', 'Discovery', '$5.40');
+ERROR:  invalid input syntax for type numeric: "$5.40"
+LINE 1: ...del, price) values (67, 'Land Rover', 'Discovery', '$5.40');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (68, 'Scion', 'tC', '$2.14');
+ERROR:  invalid input syntax for type numeric: "$2.14"
+LINE 1: ...id, make, model, price) values (68, 'Scion', 'tC', '$2.14');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (69, 'Chevrolet', 'Cavalier', '$1.07');
+ERROR:  invalid input syntax for type numeric: "$1.07"
+LINE 1: ...model, price) values (69, 'Chevrolet', 'Cavalier', '$1.07');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (70, 'Ford', 'F-Series', '$0.10');
+ERROR:  invalid input syntax for type numeric: "$0.10"
+LINE 1: ...ake, model, price) values (70, 'Ford', 'F-Series', '$0.10');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (71, 'Chevrolet', 'Cobalt', '$8.69');
+ERROR:  invalid input syntax for type numeric: "$8.69"
+LINE 1: ..., model, price) values (71, 'Chevrolet', 'Cobalt', '$8.69');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (72, 'Chevrolet', 'Express 1500', '$3.15');
+ERROR:  invalid input syntax for type numeric: "$3.15"
+LINE 1: ...l, price) values (72, 'Chevrolet', 'Express 1500', '$3.15');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (73, 'Volvo', 'S80', '$2.51');
+ERROR:  invalid input syntax for type numeric: "$2.51"
+LINE 1: ...d, make, model, price) values (73, 'Volvo', 'S80', '$2.51');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (74, 'Honda', 'Insight', '$6.50');
+ERROR:  invalid input syntax for type numeric: "$6.50"
+LINE 1: ...ake, model, price) values (74, 'Honda', 'Insight', '$6.50');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (75, 'Honda', 'Civic', '$5.35');
+ERROR:  invalid input syntax for type numeric: "$5.35"
+LINE 1: ... make, model, price) values (75, 'Honda', 'Civic', '$5.35');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (76, 'Mercury', 'Marquis', '$7.69');
+ERROR:  invalid input syntax for type numeric: "$7.69"
+LINE 1: ...e, model, price) values (76, 'Mercury', 'Marquis', '$7.69');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (77, 'Mazda', 'B-Series', '$6.68');
+ERROR:  invalid input syntax for type numeric: "$6.68"
+LINE 1: ...ke, model, price) values (77, 'Mazda', 'B-Series', '$6.68');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (78, 'Oldsmobile', 'Achieva', '$2.86');
+ERROR:  invalid input syntax for type numeric: "$2.86"
+LINE 1: ...model, price) values (78, 'Oldsmobile', 'Achieva', '$2.86');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (79, 'GMC', 'Yukon XL 2500', '$8.51');
+ERROR:  invalid input syntax for type numeric: "$8.51"
+LINE 1: ... model, price) values (79, 'GMC', 'Yukon XL 2500', '$8.51');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (80, 'Porsche', '928', '$5.53');
+ERROR:  invalid input syntax for type numeric: "$5.53"
+LINE 1: ... make, model, price) values (80, 'Porsche', '928', '$5.53');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (81, 'Land Rover', 'Freelander', '$2.29');
+ERROR:  invalid input syntax for type numeric: "$2.29"
+LINE 1: ...el, price) values (81, 'Land Rover', 'Freelander', '$2.29');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (82, 'Audi', 'A6', '$4.29');
+ERROR:  invalid input syntax for type numeric: "$4.29"
+LINE 1: ...(id, make, model, price) values (82, 'Audi', 'A6', '$4.29');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (83, 'Toyota', 'Tacoma Xtra', '$1.52');
+ERROR:  invalid input syntax for type numeric: "$1.52"
+LINE 1: ...model, price) values (83, 'Toyota', 'Tacoma Xtra', '$1.52');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (84, 'Acura', 'NSX', '$6.44');
+ERROR:  invalid input syntax for type numeric: "$6.44"
+LINE 1: ...d, make, model, price) values (84, 'Acura', 'NSX', '$6.44');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (85, 'Mercury', 'Topaz', '$8.63');
+ERROR:  invalid input syntax for type numeric: "$8.63"
+LINE 1: ...ake, model, price) values (85, 'Mercury', 'Topaz', '$8.63');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (86, 'Ford', 'E-Series', '$6.47');
+ERROR:  invalid input syntax for type numeric: "$6.47"
+LINE 1: ...ake, model, price) values (86, 'Ford', 'E-Series', '$6.47');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (87, 'Ford', 'F-Series Super Duty', '$9.68');
+ERROR:  invalid input syntax for type numeric: "$9.68"
+LINE 1: ... price) values (87, 'Ford', 'F-Series Super Duty', '$9.68');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (88, 'Chevrolet', 'Sportvan G20', '$9.20');
+ERROR:  invalid input syntax for type numeric: "$9.20"
+LINE 1: ...l, price) values (88, 'Chevrolet', 'Sportvan G20', '$9.20');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (89, 'Volkswagen', 'Passat', '$1.44');
+ERROR:  invalid input syntax for type numeric: "$1.44"
+LINE 1: ... model, price) values (89, 'Volkswagen', 'Passat', '$1.44');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (90, 'Ford', 'Five Hundred', '$2.53');
+ERROR:  invalid input syntax for type numeric: "$2.53"
+LINE 1: ... model, price) values (90, 'Ford', 'Five Hundred', '$2.53');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (91, 'Acura', 'TL', '$0.90');
+ERROR:  invalid input syntax for type numeric: "$0.90"
+LINE 1: ...id, make, model, price) values (91, 'Acura', 'TL', '$0.90');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (92, 'Toyota', 'Echo', '$2.44');
+ERROR:  invalid input syntax for type numeric: "$2.44"
+LINE 1: ... make, model, price) values (92, 'Toyota', 'Echo', '$2.44');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (93, 'Lexus', 'GS', '$2.73');
+ERROR:  invalid input syntax for type numeric: "$2.73"
+LINE 1: ...id, make, model, price) values (93, 'Lexus', 'GS', '$2.73');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (94, 'Ford', 'Contour', '$5.64');
+ERROR:  invalid input syntax for type numeric: "$5.64"
+LINE 1: ...make, model, price) values (94, 'Ford', 'Contour', '$5.64');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (95, 'Pontiac', 'Parisienne', '$4.93');
+ERROR:  invalid input syntax for type numeric: "$4.93"
+LINE 1: ...model, price) values (95, 'Pontiac', 'Parisienne', '$4.93');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (96, 'Chevrolet', 'Express 3500', '$7.78');
+ERROR:  invalid input syntax for type numeric: "$7.78"
+LINE 1: ...l, price) values (96, 'Chevrolet', 'Express 3500', '$7.78');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (97, 'Pontiac', 'Grand Am', '$7.45');
+ERROR:  invalid input syntax for type numeric: "$7.45"
+LINE 1: ..., model, price) values (97, 'Pontiac', 'Grand Am', '$7.45');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (98, 'Chevrolet', '1500', '$7.23');
+ERROR:  invalid input syntax for type numeric: "$7.23"
+LINE 1: ...ke, model, price) values (98, 'Chevrolet', '1500', '$7.23');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (99, 'Mitsubishi', 'Montero', '$8.76');
+ERROR:  invalid input syntax for type numeric: "$8.76"
+LINE 1: ...model, price) values (99, 'Mitsubishi', 'Montero', '$8.76');
+                                                              ^
+test2=# insert into car (id, make, model, price) values (100, 'Chevrolet', 'Malibu', '$8.67');
+ERROR:  invalid input syntax for type numeric: "$8.67"
+LINE 1: ... model, price) values (100, 'Chevrolet', 'Malibu', '$8.67');
+                                                              ^
+test2=# \c
+You are now connected to database "test2" as user "axelor".
+test2=# insert into car (id, make, model, price) values (1, 'Lexus', 'ES', $8.95);
+ERROR:  syntax error at or near ".95"
+LINE 1: ...r (id, make, model, price) values (1, 'Lexus', 'ES', $8.95);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (2, 'BMW', 'Z8', $5.37);
+ERROR:  syntax error at or near ".37"
+LINE 1: ...car (id, make, model, price) values (2, 'BMW', 'Z8', $5.37);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (3, 'Saab', '9-5', $8.36);
+ERROR:  syntax error at or near ".36"
+LINE 1: ...r (id, make, model, price) values (3, 'Saab', '9-5', $8.36);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (4, 'Audi', '100', $3.64);
+ERROR:  syntax error at or near ".64"
+LINE 1: ...r (id, make, model, price) values (4, 'Audi', '100', $3.64);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (5, 'Ford', 'Taurus', $4.10);
+ERROR:  syntax error at or near ".10"
+LINE 1: ...id, make, model, price) values (5, 'Ford', 'Taurus', $4.10);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (6, 'BMW', '6 Series', $8.66);
+ERROR:  syntax error at or near ".66"
+LINE 1: ...d, make, model, price) values (6, 'BMW', '6 Series', $8.66);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (7, 'Chevrolet', 'Sportvan G30', $2.99);
+ERROR:  syntax error at or near ".99"
+LINE 1: ...odel, price) values (7, 'Chevrolet', 'Sportvan G30', $2.99);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (8, 'Infiniti', 'EX', $2.24);
+ERROR:  syntax error at or near ".24"
+LINE 1: ...id, make, model, price) values (8, 'Infiniti', 'EX', $2.24);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (9, 'Ford', 'E150', $8.56);
+ERROR:  syntax error at or near ".56"
+LINE 1: ... (id, make, model, price) values (9, 'Ford', 'E150', $8.56);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (10, 'Mazda', 'Mazda6', $0.80);
+ERROR:  syntax error at or near ".80"
+LINE 1: ..., make, model, price) values (10, 'Mazda', 'Mazda6', $0.80);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (11, 'Suzuki', 'Grand Vitara', $9.99);
+ERROR:  syntax error at or near ".99"
+LINE 1: ... model, price) values (11, 'Suzuki', 'Grand Vitara', $9.99);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (12, 'Volkswagen', 'Passat', $7.34);
+ERROR:  syntax error at or near ".34"
+LINE 1: ...e, model, price) values (12, 'Volkswagen', 'Passat', $7.34);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (13, 'Toyota', 'Tacoma Xtra', $6.57);
+ERROR:  syntax error at or near ".57"
+LINE 1: ..., model, price) values (13, 'Toyota', 'Tacoma Xtra', $6.57);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (14, 'Saab', '900', $7.37);
+ERROR:  syntax error at or near ".37"
+LINE 1: ... (id, make, model, price) values (14, 'Saab', '900', $7.37);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (15, 'GMC', '1500', $1.40);
+ERROR:  syntax error at or near ".40"
+LINE 1: ... (id, make, model, price) values (15, 'GMC', '1500', $1.40);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (16, 'Honda', 'Prelude', $3.88);
+ERROR:  syntax error at or near ".88"
+LINE 1: ... make, model, price) values (16, 'Honda', 'Prelude', $3.88);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (17, 'Nissan', 'Maxima', $6.23);
+ERROR:  syntax error at or near ".23"
+LINE 1: ... make, model, price) values (17, 'Nissan', 'Maxima', $6.23);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (18, 'Dodge', 'Dakota', $1.42);
+ERROR:  syntax error at or near ".42"
+LINE 1: ..., make, model, price) values (18, 'Dodge', 'Dakota', $1.42);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (19, 'Buick', 'Regal', $4.32);
+ERROR:  syntax error at or near ".32"
+LINE 1: ...d, make, model, price) values (19, 'Buick', 'Regal', $4.32);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (20, 'Chevrolet', 'Venture', $3.92);
+ERROR:  syntax error at or near ".92"
+LINE 1: ...e, model, price) values (20, 'Chevrolet', 'Venture', $3.92);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (21, 'Oldsmobile', 'Aurora', $4.78);
+ERROR:  syntax error at or near ".78"
+LINE 1: ...e, model, price) values (21, 'Oldsmobile', 'Aurora', $4.78);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (22, 'Buick', 'LeSabre', $6.95);
+ERROR:  syntax error at or near ".95"
+LINE 1: ... make, model, price) values (22, 'Buick', 'LeSabre', $6.95);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (23, 'Lexus', 'RX Hybrid', $0.07);
+ERROR:  syntax error at or near ".07"
+LINE 1: ...ake, model, price) values (23, 'Lexus', 'RX Hybrid', $0.07);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (24, 'Pontiac', 'Turbo Firefly', $6.98);
+ERROR:  syntax error at or near ".98"
+LINE 1: ...odel, price) values (24, 'Pontiac', 'Turbo Firefly', $6.98);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (25, 'Plymouth', 'Breeze', $7.31);
+ERROR:  syntax error at or near ".31"
+LINE 1: ...ake, model, price) values (25, 'Plymouth', 'Breeze', $7.31);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (26, 'BMW', 'X6', $9.07);
+ERROR:  syntax error at or near ".07"
+LINE 1: ...ar (id, make, model, price) values (26, 'BMW', 'X6', $9.07);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (27, 'Ford', 'GT500', $8.58);
+ERROR:  syntax error at or near ".58"
+LINE 1: ...id, make, model, price) values (27, 'Ford', 'GT500', $8.58);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (28, 'Pontiac', 'Grand Am', $4.05);
+ERROR:  syntax error at or near ".05"
+LINE 1: ...ke, model, price) values (28, 'Pontiac', 'Grand Am', $4.05);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (29, 'Subaru', 'Baja', $9.60);
+ERROR:  syntax error at or near ".60"
+LINE 1: ...d, make, model, price) values (29, 'Subaru', 'Baja', $9.60);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (30, 'Chrysler', 'Town & Country', $5.50);
+ERROR:  syntax error at or near ".50"
+LINE 1: ...el, price) values (30, 'Chrysler', 'Town & Country', $5.50);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (31, 'Saturn', 'S-Series', $1.25);
+ERROR:  syntax error at or near ".25"
+LINE 1: ...ake, model, price) values (31, 'Saturn', 'S-Series', $1.25);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (32, 'Chevrolet', 'Camaro', $2.05);
+ERROR:  syntax error at or near ".05"
+LINE 1: ...ke, model, price) values (32, 'Chevrolet', 'Camaro', $2.05);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (33, 'GMC', 'Savana 3500', $4.98);
+ERROR:  syntax error at or near ".98"
+LINE 1: ...ake, model, price) values (33, 'GMC', 'Savana 3500', $4.98);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (34, 'BMW', '645', $0.93);
+ERROR:  syntax error at or near ".93"
+LINE 1: ...r (id, make, model, price) values (34, 'BMW', '645', $0.93);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (35, 'Volkswagen', 'Cabriolet', $3.04);
+ERROR:  syntax error at or near ".04"
+LINE 1: ...model, price) values (35, 'Volkswagen', 'Cabriolet', $3.04);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (36, 'GMC', '3500', $6.52);
+6ERROR:  syntax error at or near ".52"
+LINE 1: ... (id, make, model, price) values (36, 'GMC', '3500', $6.52);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (37, 'Jeep', 'Cherokee', $8.54);
+ERROR:  syntax error at or near ".54"
+LINE 1: ... make, model, price) values (37, 'Jeep', 'Cherokee', $8.54);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (38, 'Mazda', 'MX-5', $7.68);
+ERROR:  syntax error at or near ".68"
+LINE 1: ...id, make, model, price) values (38, 'Mazda', 'MX-5', $7.68);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (39, 'Nissan', 'Quest', $4.22);
+ERROR:  syntax error at or near ".22"
+LINE 1: ..., make, model, price) values (39, 'Nissan', 'Quest', $4.22);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (40, 'Mercury', 'Sable', $1.78);
+ERROR:  syntax error at or near ".78"
+LINE 1: ... make, model, price) values (40, 'Mercury', 'Sable', $1.78);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (41, 'Chevrolet', 'Aveo', $9.67);
+ERROR:  syntax error at or near ".67"
+LINE 1: ...make, model, price) values (41, 'Chevrolet', 'Aveo', $9.67);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (42, 'Kia', 'Rio', $8.58);
+ERROR:  syntax error at or near ".58"
+LINE 1: ...r (id, make, model, price) values (42, 'Kia', 'Rio', $8.58);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (43, 'Subaru', 'Impreza', $4.50);
+ERROR:  syntax error at or near ".50"
+LINE 1: ...make, model, price) values (43, 'Subaru', 'Impreza', $4.50);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (44, 'Ford', 'Laser', $5.27);
+ERROR:  syntax error at or near ".27"
+LINE 1: ...id, make, model, price) values (44, 'Ford', 'Laser', $5.27);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (45, 'Mercedes-Benz', 'SL-Class', $4.79);
+ERROR:  syntax error at or near ".79"
+LINE 1: ...del, price) values (45, 'Mercedes-Benz', 'SL-Class', $4.79);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (46, 'Nissan', 'Quest', $1.16);
+ERROR:  syntax error at or near ".16"
+LINE 1: ..., make, model, price) values (46, 'Nissan', 'Quest', $1.16);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (47, 'Chevrolet', 'Lumina APV', $6.00);
+ERROR:  syntax error at or near ".00"
+LINE 1: ...model, price) values (47, 'Chevrolet', 'Lumina APV', $6.00);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (48, 'Mercedes-Benz', 'CLS-Class', $2.38);
+ERROR:  syntax error at or near ".38"
+LINE 1: ...el, price) values (48, 'Mercedes-Benz', 'CLS-Class', $2.38);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (49, 'Mazda', 'Miata MX-5', $9.02);
+ERROR:  syntax error at or near ".02"
+LINE 1: ...ke, model, price) values (49, 'Mazda', 'Miata MX-5', $9.02);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (50, 'Dodge', 'Grand Caravan', $3.33);
+ERROR:  syntax error at or near ".33"
+LINE 1: ... model, price) values (50, 'Dodge', 'Grand Caravan', $3.33);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (51, 'Ford', 'Ranger', $4.31);
+ERROR:  syntax error at or near ".31"
+LINE 1: ...d, make, model, price) values (51, 'Ford', 'Ranger', $4.31);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (52, 'Volkswagen', 'GTI', $2.72);
+ERROR:  syntax error at or near ".72"
+LINE 1: ...make, model, price) values (52, 'Volkswagen', 'GTI', $2.72);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (53, 'Buick', 'Century', $5.04);
+ERROR:  syntax error at or near ".04"
+LINE 1: ... make, model, price) values (53, 'Buick', 'Century', $5.04);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (54, 'Chevrolet', 'Silverado 2500', $7.28);
+ERROR:  syntax error at or near ".28"
+LINE 1: ...l, price) values (54, 'Chevrolet', 'Silverado 2500', $7.28);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (55, 'Chevrolet', '1500', $3.28);
+ERROR:  syntax error at or near ".28"
+LINE 1: ...make, model, price) values (55, 'Chevrolet', '1500', $3.28);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (56, 'Mercedes-Benz', '300SE', $1.84);
+ERROR:  syntax error at or near ".84"
+LINE 1: ... model, price) values (56, 'Mercedes-Benz', '300SE', $1.84);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (57, 'Mazda', '626', $0.43);
+ERROR:  syntax error at or near ".43"
+LINE 1: ...(id, make, model, price) values (57, 'Mazda', '626', $0.43);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (58, 'Volkswagen', 'Rabbit', $3.01);
+ERROR:  syntax error at or near ".01"
+LINE 1: ...e, model, price) values (58, 'Volkswagen', 'Rabbit', $3.01);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (59, 'Scion', 'tC', $7.85);
+ERROR:  syntax error at or near ".85"
+LINE 1: ... (id, make, model, price) values (59, 'Scion', 'tC', $7.85);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (60, 'Hyundai', 'Equus', $2.90);
+ERROR:  syntax error at or near ".90"
+LINE 1: ... make, model, price) values (60, 'Hyundai', 'Equus', $2.90);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (61, 'Lexus', 'GS', $2.41);
+ERROR:  syntax error at or near ".41"
+LINE 1: ... (id, make, model, price) values (61, 'Lexus', 'GS', $2.41);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (62, 'Honda', 'Civic', $3.40);
+ERROR:  syntax error at or near ".40"
+LINE 1: ...d, make, model, price) values (62, 'Honda', 'Civic', $3.40);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (63, 'Nissan', 'Maxima', $1.47);
+ERROR:  syntax error at or near ".47"
+LINE 1: ... make, model, price) values (63, 'Nissan', 'Maxima', $1.47);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (64, 'Eagle', 'Talon', $4.66);
+ERROR:  syntax error at or near ".66"
+LINE 1: ...d, make, model, price) values (64, 'Eagle', 'Talon', $4.66);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (65, 'Ford', 'Taurus', $7.13);
+ERROR:  syntax error at or near ".13"
+LINE 1: ...d, make, model, price) values (65, 'Ford', 'Taurus', $7.13);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (66, 'Volkswagen', 'Fox', $7.56);
+ERROR:  syntax error at or near ".56"
+LINE 1: ...make, model, price) values (66, 'Volkswagen', 'Fox', $7.56);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (67, 'Land Rover', 'Discovery', $5.40);
+ERROR:  syntax error at or near ".40"
+LINE 1: ...model, price) values (67, 'Land Rover', 'Discovery', $5.40);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (68, 'Scion', 'tC', $2.14);
+ERROR:  syntax error at or near ".14"
+LINE 1: ... (id, make, model, price) values (68, 'Scion', 'tC', $2.14);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (69, 'Chevrolet', 'Cavalier', $1.07);
+ERROR:  syntax error at or near ".07"
+LINE 1: ..., model, price) values (69, 'Chevrolet', 'Cavalier', $1.07);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (70, 'Ford', 'F-Series', $0.10);
+ERROR:  syntax error at or near ".10"
+LINE 1: ... make, model, price) values (70, 'Ford', 'F-Series', $0.10);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (71, 'Chevrolet', 'Cobalt', $8.69);
+ERROR:  syntax error at or near ".69"
+LINE 1: ...ke, model, price) values (71, 'Chevrolet', 'Cobalt', $8.69);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (72, 'Chevrolet', 'Express 1500', $3.15);
+ERROR:  syntax error at or near ".15"
+LINE 1: ...del, price) values (72, 'Chevrolet', 'Express 1500', $3.15);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (73, 'Volvo', 'S80', $2.51);
+ERROR:  syntax error at or near ".51"
+LINE 1: ...(id, make, model, price) values (73, 'Volvo', 'S80', $2.51);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (74, 'Honda', 'Insight', $6.50);
+ERROR:  syntax error at or near ".50"
+LINE 1: ... make, model, price) values (74, 'Honda', 'Insight', $6.50);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (75, 'Honda', 'Civic', $5.35);
+ERROR:  syntax error at or near ".35"
+LINE 1: ...d, make, model, price) values (75, 'Honda', 'Civic', $5.35);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (76, 'Mercury', 'Marquis', $7.69);
+ERROR:  syntax error at or near ".69"
+LINE 1: ...ake, model, price) values (76, 'Mercury', 'Marquis', $7.69);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (77, 'Mazda', 'B-Series', $6.68);
+ERROR:  syntax error at or near ".68"
+LINE 1: ...make, model, price) values (77, 'Mazda', 'B-Series', $6.68);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (78, 'Oldsmobile', 'Achieva', $2.86);
+ERROR:  syntax error at or near ".86"
+LINE 1: ..., model, price) values (78, 'Oldsmobile', 'Achieva', $2.86);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (79, 'GMC', 'Yukon XL 2500', $8.51);
+ERROR:  syntax error at or near ".51"
+LINE 1: ...e, model, price) values (79, 'GMC', 'Yukon XL 2500', $8.51);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (80, 'Porsche', '928', $5.53);
+ERROR:  syntax error at or near ".53"
+LINE 1: ...d, make, model, price) values (80, 'Porsche', '928', $5.53);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (81, 'Land Rover', 'Freelander', $2.29);
+ERROR:  syntax error at or near ".29"
+LINE 1: ...odel, price) values (81, 'Land Rover', 'Freelander', $2.29);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (82, 'Audi', 'A6', $4.29);
+ERROR:  syntax error at or near ".29"
+LINE 1: ...r (id, make, model, price) values (82, 'Audi', 'A6', $4.29);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (83, 'Toyota', 'Tacoma Xtra', $1.52);
+ERROR:  syntax error at or near ".52"
+LINE 1: ..., model, price) values (83, 'Toyota', 'Tacoma Xtra', $1.52);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (84, 'Acura', 'NSX', $6.44);
+ERROR:  syntax error at or near ".44"
+LINE 1: ...(id, make, model, price) values (84, 'Acura', 'NSX', $6.44);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (85, 'Mercury', 'Topaz', $8.63);
+ERROR:  syntax error at or near ".63"
+LINE 1: ... make, model, price) values (85, 'Mercury', 'Topaz', $8.63);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (86, 'Ford', 'E-Series', $6.47);
+ERROR:  syntax error at or near ".47"
+LINE 1: ... make, model, price) values (86, 'Ford', 'E-Series', $6.47);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (87, 'Ford', 'F-Series Super Duty', $9.68);
+ERROR:  syntax error at or near ".68"
+LINE 1: ...l, price) values (87, 'Ford', 'F-Series Super Duty', $9.68);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (88, 'Chevrolet', 'Sportvan G20', $9.20);
+ERROR:  syntax error at or near ".20"
+LINE 1: ...del, price) values (88, 'Chevrolet', 'Sportvan G20', $9.20);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (89, 'Volkswagen', 'Passat', $1.44);
+ERROR:  syntax error at or near ".44"
+LINE 1: ...e, model, price) values (89, 'Volkswagen', 'Passat', $1.44);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (90, 'Ford', 'Five Hundred', $2.53);
+ERROR:  syntax error at or near ".53"
+LINE 1: ...e, model, price) values (90, 'Ford', 'Five Hundred', $2.53);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (91, 'Acura', 'TL', $0.90);
+ERROR:  syntax error at or near ".90"
+LINE 1: ... (id, make, model, price) values (91, 'Acura', 'TL', $0.90);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (92, 'Toyota', 'Echo', $2.44);
+ERROR:  syntax error at or near ".44"
+LINE 1: ...d, make, model, price) values (92, 'Toyota', 'Echo', $2.44);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (93, 'Lexus', 'GS', $2.73);
+ERROR:  syntax error at or near ".73"
+LINE 1: ... (id, make, model, price) values (93, 'Lexus', 'GS', $2.73);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (94, 'Ford', 'Contour', $5.64);
+ERROR:  syntax error at or near ".64"
+LINE 1: ..., make, model, price) values (94, 'Ford', 'Contour', $5.64);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (95, 'Pontiac', 'Parisienne', $4.93);
+ERROR:  syntax error at or near ".93"
+LINE 1: ..., model, price) values (95, 'Pontiac', 'Parisienne', $4.93);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (96, 'Chevrolet', 'Express 3500', $7.78);
+ERROR:  syntax error at or near ".78"
+LINE 1: ...del, price) values (96, 'Chevrolet', 'Express 3500', $7.78);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (97, 'Pontiac', 'Grand Am', $7.45);
+ERROR:  syntax error at or near ".45"
+LINE 1: ...ke, model, price) values (97, 'Pontiac', 'Grand Am', $7.45);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (98, 'Chevrolet', '1500', $7.23);
+ERROR:  syntax error at or near ".23"
+LINE 1: ...make, model, price) values (98, 'Chevrolet', '1500', $7.23);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (99, 'Mitsubishi', 'Montero', $8.76);
+ERROR:  syntax error at or near ".76"
+LINE 1: ..., model, price) values (99, 'Mitsubishi', 'Montero', $8.76);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (100, 'Chevrolet', 'Malibu', $8.67);
+ERROR:  syntax error at or near ".67"
+LINE 1: ...e, model, price) values (100, 'Chevrolet', 'Malibu', $8.67);
+                                                                  ^
+test2=# \d car
+                                    Table "public.car"
+ Column |          Type          | Collation | Nullable |             Default             
+--------+------------------------+-----------+----------+---------------------------------
+ id     | bigint                 |           | not null | nextval('car_id_seq'::regclass)
+ make   | character varying(100) |           | not null | 
+ model  | character varying(100) |           | not null | 
+ price  | numeric(19,2)          |           | not null | 
+Indexes:
+    "car_pkey" PRIMARY KEY, btree (id)
+
+test2=# nsert into car (id, make, model, price) values (1, 'Lexus', 'ES', $8.95);
+ERROR:  syntax error at or near "nsert"
+LINE 1: nsert into car (id, make, model, price) values (1, 'Lexus', ...
+        ^
+test2=# insert into car (id, make, model, price) values (1, 'Lexus', 'ES', $8.95);
+ERROR:  syntax error at or near ".95"
+LINE 1: ...r (id, make, model, price) values (1, 'Lexus', 'ES', $8.95);
+                                                                  ^
+test2=# insert into car (id, make, model, price) values (1, 'Lexus', 'ES', 8.95);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (2, 'BMW', 'Z8', 5.37);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (3, 'Saab', '9-5', 8.36);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (4, 'Audi', '100', 3.64);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (5, 'Ford', 'Taurus', 4.10);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (6, 'BMW', '6 Series', 8.66);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (7, 'Chevrolet', 'Sportvan G30', 2.99);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (8, 'Infiniti', 'EX', 2.24);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (9, 'Ford', 'E150', 8.56);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (10, 'Mazda', 'Mazda6', 0.80);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (11, 'Suzuki', 'Grand Vitara', 9.99);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (12, 'Volkswagen', 'Passat', 7.34);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (13, 'Toyota', 'Tacoma Xtra', 6.57);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (14, 'Saab', '900', 7.37);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (15, 'GMC', '1500', 1.40);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (16, 'Honda', 'Prelude', 3.88);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (17, 'Nissan', 'Maxima', 6.23);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (18, 'Dodge', 'Dakota', 1.42);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (19, 'Buick', 'Regal', 4.32);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (20, 'Chevrolet', 'Venture', 3.92);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (21, 'Oldsmobile', 'Aurora', 4.78);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (22, 'Buick', 'LeSabre', 6.95);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (23, 'Lexus', 'RX Hybrid', 0.07);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (24, 'Pontiac', 'Turbo Firefly', 6.98);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (25, 'Plymouth', 'Breeze', 7.31);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (26, 'BMW', 'X6', 9.07);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (27, 'Ford', 'GT500', 8.58);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (28, 'Pontiac', 'Grand Am', 4.05);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (29, 'Subaru', 'Baja', 9.60);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (30, 'Chrysler', 'Town & Country', 5.50);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (31, 'Saturn', 'S-Series', 1.25);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (32, 'Chevrolet', 'Camaro', 2.05);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (33, 'GMC', 'Savana 3500', 4.98);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (34, 'BMW', '645', 0.93);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (35, 'Volkswagen', 'Cabriolet', 3.04);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (36, 'GMC', '3500', 6.52);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (37, 'Jeep', 'Cherokee', 8.54);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (38, 'Mazda', 'MX-5', 7.68);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (39, 'Nissan', 'Quest', 4.22);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (40, 'Mercury', 'Sable', 1.78);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (41, 'Chevrolet', 'Aveo', 9.67);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (42, 'Kia', 'Rio', 8.58);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (43, 'Subaru', 'Impreza', 4.50);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (44, 'Ford', 'Laser', 5.27);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (45, 'Mercedes-Benz', 'SL-Class', 4.79);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (46, 'Nissan', 'Quest', 1.16);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (47, 'Chevrolet', 'Lumina APV', 6.00);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (48, 'Mercedes-Benz', 'CLS-Class', 2.38);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (49, 'Mazda', 'Miata MX-5', 9.02);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (50, 'Dodge', 'Grand Caravan', 3.33);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (51, 'Ford', 'Ranger', 4.31);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (52, 'Volkswagen', 'GTI', 2.72);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (53, 'Buick', 'Century', 5.04);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (54, 'Chevrolet', 'Silverado 2500', 7.28);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (55, 'Chevrolet', '1500', 3.28);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (56, 'Mercedes-Benz', '300SE', 1.84);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (57, 'Mazda', '626', 0.43);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (58, 'Volkswagen', 'Rabbit', 3.01);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (59, 'Scion', 'tC', 7.85);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (60, 'Hyundai', 'Equus', 2.90);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (61, 'Lexus', 'GS', 2.41);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (62, 'Honda', 'Civic', 3.40);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (63, 'Nissan', 'Maxima', 1.47);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (64, 'Eagle', 'Talon', 4.66);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (65, 'Ford', 'Taurus', 7.13);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (66, 'Volkswagen', 'Fox', 7.56);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (67, 'Land Rover', 'Discovery', 5.40);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (68, 'Scion', 'tC', 2.14);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (69, 'Chevrolet', 'Cavalier', 1.07);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (70, 'Ford', 'F-Series', 0.10);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (71, 'Chevrolet', 'Cobalt', 8.69);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (72, 'Chevrolet', 'Express 1500', 3.15);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (73, 'Volvo', 'S80', 2.51);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (74, 'Honda', 'Insight', 6.50);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (75, 'Honda', 'Civic', 5.35);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (76, 'Mercury', 'Marquis', 7.69);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (77, 'Mazda', 'B-Series', 6.68);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (78, 'Oldsmobile', 'Achieva', 2.86);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (79, 'GMC', 'Yukon XL 2500', 8.51);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (80, 'Porsche', '928', 5.53);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (81, 'Land Rover', 'Freelander', 2.29);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (82, 'Audi', 'A6', 4.29);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (83, 'Toyota', 'Tacoma Xtra', 1.52);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (84, 'Acura', 'NSX', 6.44);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (85, 'Mercury', 'Topaz', 8.63);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (86, 'Ford', 'E-Series', 6.47);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (87, 'Ford', 'F-Series Super Duty', 9.68);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (88, 'Chevrolet', 'Sportvan G20', 9.20);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (89, 'Volkswagen', 'Passat', 1.44);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (90, 'Ford', 'Five Hundred', 2.53);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (91, 'Acura', 'TL', 0.90);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (92, 'Toyota', 'Echo', 2.44);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (93, 'Lexus', 'GS', 2.73);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (94, 'Ford', 'Contour', 5.64);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (95, 'Pontiac', 'Parisienne', 4.93);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (96, 'Chevrolet', 'Express 3500', 7.78);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (97, 'Pontiac', 'Grand Am', 7.45);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (98, 'Chevrolet', '1500', 7.23);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (99, 'Mitsubishi', 'Montero', 8.76);
+INSERT 0 1
+test2=# insert into car (id, make, model, price) values (100, 'Chevrolet', 'Malibu', 8.67);
+INSERT 0 1
+test2=# 
+test2=# select * from car;
+ id  |     make      |        model        | price 
+-----+---------------+---------------------+-------
+   1 | Lexus         | ES                  |  8.95
+   2 | BMW           | Z8                  |  5.37
+   3 | Saab          | 9-5                 |  8.36
+   4 | Audi          | 100                 |  3.64
+   5 | Ford          | Taurus              |  4.10
+   6 | BMW           | 6 Series            |  8.66
+   7 | Chevrolet     | Sportvan G30        |  2.99
+   8 | Infiniti      | EX                  |  2.24
+   9 | Ford          | E150                |  8.56
+  10 | Mazda         | Mazda6              |  0.80
+  11 | Suzuki        | Grand Vitara        |  9.99
+  12 | Volkswagen    | Passat              |  7.34
+  13 | Toyota        | Tacoma Xtra         |  6.57
+  14 | Saab          | 900                 |  7.37
+  15 | GMC           | 1500                |  1.40
+  16 | Honda         | Prelude             |  3.88
+  17 | Nissan        | Maxima              |  6.23
+  18 | Dodge         | Dakota              |  1.42
+  19 | Buick         | Regal               |  4.32
+  20 | Chevrolet     | Venture             |  3.92
+  21 | Oldsmobile    | Aurora              |  4.78
+  22 | Buick         | LeSabre             |  6.95
+  23 | Lexus         | RX Hybrid           |  0.07
+  24 | Pontiac       | Turbo Firefly       |  6.98
+  25 | Plymouth      | Breeze              |  7.31
+  26 | BMW           | X6                  |  9.07
+  27 | Ford          | GT500               |  8.58
+  28 | Pontiac       | Grand Am            |  4.05
+  29 | Subaru        | Baja                |  9.60
+  30 | Chrysler      | Town & Country      |  5.50
+  31 | Saturn        | S-Series            |  1.25
+  32 | Chevrolet     | Camaro              |  2.05
+  33 | GMC           | Savana 3500         |  4.98
+  34 | BMW           | 645                 |  0.93
+  35 | Volkswagen    | Cabriolet           |  3.04
+  36 | GMC           | 3500                |  6.52
+  37 | Jeep          | Cherokee            |  8.54
+  38 | Mazda         | MX-5                |  7.68
+  39 | Nissan        | Quest               |  4.22
+  40 | Mercury       | Sable               |  1.78
+  41 | Chevrolet     | Aveo                |  9.67
+  42 | Kia           | Rio                 |  8.58
+  43 | Subaru        | Impreza             |  4.50
+  44 | Ford          | Laser               |  5.27
+  45 | Mercedes-Benz | SL-Class            |  4.79
+  46 | Nissan        | Quest               |  1.16
+  47 | Chevrolet     | Lumina APV          |  6.00
+  48 | Mercedes-Benz | CLS-Class           |  2.38
+  49 | Mazda         | Miata MX-5          |  9.02
+  50 | Dodge         | Grand Caravan       |  3.33
+  51 | Ford          | Ranger              |  4.31
+  52 | Volkswagen    | GTI                 |  2.72
+  53 | Buick         | Century             |  5.04
+  54 | Chevrolet     | Silverado 2500      |  7.28
+  55 | Chevrolet     | 1500                |  3.28
+  56 | Mercedes-Benz | 300SE               |  1.84
+  57 | Mazda         | 626                 |  0.43
+  58 | Volkswagen    | Rabbit              |  3.01
+  59 | Scion         | tC                  |  7.85
+  60 | Hyundai       | Equus               |  2.90
+  61 | Lexus         | GS                  |  2.41
+  62 | Honda         | Civic               |  3.40
+  63 | Nissan        | Maxima              |  1.47
+  64 | Eagle         | Talon               |  4.66
+  65 | Ford          | Taurus              |  7.13
+  66 | Volkswagen    | Fox                 |  7.56
+  67 | Land Rover    | Discovery           |  5.40
+  68 | Scion         | tC                  |  2.14
+  69 | Chevrolet     | Cavalier            |  1.07
+  70 | Ford          | F-Series            |  0.10
+  71 | Chevrolet     | Cobalt              |  8.69
+  72 | Chevrolet     | Express 1500        |  3.15
+  73 | Volvo         | S80                 |  2.51
+  74 | Honda         | Insight             |  6.50
+  75 | Honda         | Civic               |  5.35
+  76 | Mercury       | Marquis             |  7.69
+  77 | Mazda         | B-Series            |  6.68
+  78 | Oldsmobile    | Achieva             |  2.86
+  79 | GMC           | Yukon XL 2500       |  8.51
+  80 | Porsche       | 928                 |  5.53
+  81 | Land Rover    | Freelander          |  2.29
+  82 | Audi          | A6                  |  4.29
+  83 | Toyota        | Tacoma Xtra         |  1.52
+  84 | Acura         | NSX                 |  6.44
+  85 | Mercury       | Topaz               |  8.63
+  86 | Ford          | E-Series            |  6.47
+  87 | Ford          | F-Series Super Duty |  9.68
+  88 | Chevrolet     | Sportvan G20        |  9.20
+  89 | Volkswagen    | Passat              |  1.44
+  90 | Ford          | Five Hundred        |  2.53
+  91 | Acura         | TL                  |  0.90
+  92 | Toyota        | Echo                |  2.44
+  93 | Lexus         | GS                  |  2.73
+  94 | Ford          | Contour             |  5.64
+  95 | Pontiac       | Parisienne          |  4.93
+  96 | Chevrolet     | Express 3500        |  7.78
+  97 | Pontiac       | Grand Am            |  7.45
+  98 | Chevrolet     | 1500                |  7.23
+  99 | Mitsubishi    | Montero             |  8.76
+ 100 | Chevrolet     | Malibu              |  8.67
+(100 rows)
+                                                        
+test2=# select max(price) from car;
+ max  
+------
+ 9.99
+(1 row)
+
+test2=# select min(price) from car;
+ min  
+------
+ 0.07
+(1 row)
+
+test2=# select avg(price) from car;
+        avg         
+--------------------
+ 5.0518000000000000
+(1 row)
+
+test2=# select round(avg(price)) from car;
+ round 
+-------
+     5
+(1 row)
+
+test2=# select make,model,min(price) from car group by make,model;
+     make      |        model        | min  
+---------------+---------------------+------
+ Plymouth      | Breeze              | 7.31
+ Mercury       | Topaz               | 8.63
+ Volkswagen    | Rabbit              | 3.01
+ Dodge         | Grand Caravan       | 3.33
+ Chevrolet     | Cobalt              | 8.69
+ Buick         | Regal               | 4.32
+ Land Rover    | Freelander          | 2.29
+ Nissan        | Maxima              | 1.47
+ Saturn        | S-Series            | 1.25
+ Audi          | 100                 | 3.64
+ BMW           | 6 Series            | 8.66
+ GMC           | 3500                | 6.52
+ Mazda         | MX-5                | 7.68
+ Ford          | E150                | 8.56
+ Jeep          | Cherokee            | 8.54
+ Hyundai       | Equus               | 2.90
+ Chevrolet     | Express 3500        | 7.78
+ Mercedes-Benz | CLS-Class           | 2.38
+ BMW           | 645                 | 0.93
+ Chevrolet     | Cavalier            | 1.07
+ Land Rover    | Discovery           | 5.40
+ Volkswagen    | Cabriolet           | 3.04
+ Pontiac       | Turbo Firefly       | 6.98
+ Ford          | F-Series Super Duty | 9.68
+ Mercedes-Benz | SL-Class            | 4.79
+ Infiniti      | EX                  | 2.24
+ Volkswagen    | Fox                 | 7.56
+ BMW           | X6                  | 9.07
+ Chevrolet     | Malibu              | 8.67
+ Ford          | Contour             | 5.64
+ Oldsmobile    | Aurora              | 4.78
+ Saab          | 9-5                 | 8.36
+ Audi          | A6                  | 4.29
+ Ford          | F-Series            | 0.10
+ Volvo         | S80                 | 2.51
+ Chevrolet     | 1500                | 3.28
+ Oldsmobile    | Achieva             | 2.86
+ Chevrolet     | Sportvan G20        | 9.20
+ Chevrolet     | Lumina APV          | 6.00
+ Kia           | Rio                 | 8.58
+ Ford          | Ranger              | 4.31
+ Chevrolet     | Camaro              | 2.05
+ Nissan        | Quest               | 1.16
+ Toyota        | Echo                | 2.44
+ Suzuki        | Grand Vitara        | 9.99
+ Ford          | Taurus              | 4.10
+ Lexus         | ES                  | 8.95
+ Pontiac       | Parisienne          | 4.93
+ Chevrolet     | Sportvan G30        | 2.99
+ BMW           | Z8                  | 5.37
+ Chevrolet     | Silverado 2500      | 7.28
+ Saab          | 900                 | 7.37
+ Chrysler      | Town & Country      | 5.50
+ Subaru        | Baja                | 9.60
+ Mitsubishi    | Montero             | 8.76
+ Mercedes-Benz | 300SE               | 1.84
+ GMC           | Savana 3500         | 4.98
+ Ford          | GT500               | 8.58
+ Lexus         | GS                  | 2.41
+ Mazda         | Miata MX-5          | 9.02
+ Buick         | LeSabre             | 6.95
+ Lexus         | RX Hybrid           | 0.07
+ Mazda         | B-Series            | 6.68
+ Ford          | Five Hundred        | 2.53
+ Honda         | Civic               | 3.40
+ Subaru        | Impreza             | 4.50
+ Acura         | TL                  | 0.90
+ Honda         | Insight             | 6.50
+ Scion         | tC                  | 2.14
+ Chevrolet     | Aveo                | 9.67
+ Volkswagen    | GTI                 | 2.72
+ Pontiac       | Grand Am            | 4.05
+ Acura         | NSX                 | 6.44
+ Mazda         | 626                 | 0.43
+ Volkswagen    | Passat              | 1.44
+ Eagle         | Talon               | 4.66
+ Ford          | Laser               | 5.27
+ Mercury       | Marquis             | 7.69
+ GMC           | 1500                | 1.40
+ Mazda         | Mazda6              | 0.80
+ Dodge         | Dakota              | 1.42
+ Honda         | Prelude             | 3.88
+ Ford          | E-Series            | 6.47
+ Chevrolet     | Venture             | 3.92
+ GMC           | Yukon XL 2500       | 8.51
+ Chevrolet     | Express 1500        | 3.15
+ Toyota        | Tacoma Xtra         | 1.52
+ Buick         | Century             | 5.04
+ Mercury       | Sable               | 1.78
+ Porsche       | 928                 | 5.53
+(90 rows)
+         
+test2=# 
+test2=# 
+test2=# 
+test2=# 
+test2=# 
+test2=# 
+test2=# 
+test2=# 
+test2=# 
+test2=# 
+test2=# select distinct make,model,min(price) from car group by make,model;
+     make      |        model        | min  
+---------------+---------------------+------
+ Pontiac       | Grand Am            | 4.05
+ Dodge         | Dakota              | 1.42
+ Ford          | Ranger              | 4.31
+ Jeep          | Cherokee            | 8.54
+ Chevrolet     | Aveo                | 9.67
+ Saab          | 900                 | 7.37
+ Kia           | Rio                 | 8.58
+ Porsche       | 928                 | 5.53
+ Buick         | LeSabre             | 6.95
+ Chevrolet     | Silverado 2500      | 7.28
+ Chevrolet     | Sportvan G30        | 2.99
+ Toyota        | Echo                | 2.44
+ Scion         | tC                  | 2.14
+ Mazda         | Miata MX-5          | 9.02
+ Mitsubishi    | Montero             | 8.76
+ Honda         | Civic               | 3.40
+ Mazda         | B-Series            | 6.68
+ Nissan        | Maxima              | 1.47
+ Ford          | E-Series            | 6.47
+ Mazda         | Mazda6              | 0.80
+ GMC           | Savana 3500         | 4.98
+ Ford          | Five Hundred        | 2.53
+ Hyundai       | Equus               | 2.90
+ Audi          | A6                  | 4.29
+ Subaru        | Impreza             | 4.50
+ Eagle         | Talon               | 4.66
+ Land Rover    | Discovery           | 5.40
+ Toyota        | Tacoma Xtra         | 1.52
+ Volkswagen    | Rabbit              | 3.01
+ Chevrolet     | Venture             | 3.92
+ Suzuki        | Grand Vitara        | 9.99
+ Chrysler      | Town & Country      | 5.50
+ Dodge         | Grand Caravan       | 3.33
+ Volkswagen    | Fox                 | 7.56
+ Mercury       | Marquis             | 7.69
+ BMW           | Z8                  | 5.37
+ Subaru        | Baja                | 9.60
+ Chevrolet     | 1500                | 3.28
+ Ford          | F-Series Super Duty | 9.68
+ Honda         | Prelude             | 3.88
+ Chevrolet     | Malibu              | 8.67
+ Ford          | Taurus              | 4.10
+ Honda         | Insight             | 6.50
+ Chevrolet     | Lumina APV          | 6.00
+ Acura         | TL                  | 0.90
+ Land Rover    | Freelander          | 2.29
+ Ford          | Laser               | 5.27
+ Audi          | 100                 | 3.64
+ Buick         | Regal               | 4.32
+ Chevrolet     | Sportvan G20        | 9.20
+ Ford          | E150                | 8.56
+ Saab          | 9-5                 | 8.36
+ Infiniti      | EX                  | 2.24
+ Mercedes-Benz | CLS-Class           | 2.38
+ Volvo         | S80                 | 2.51
+ Mercedes-Benz | SL-Class            | 4.79
+ Chevrolet     | Cavalier            | 1.07
+ Chevrolet     | Express 3500        | 7.78
+ Pontiac       | Turbo Firefly       | 6.98
+ Oldsmobile    | Aurora              | 4.78
+ Nissan        | Quest               | 1.16
+ Oldsmobile    | Achieva             | 2.86
+ Mercury       | Topaz               | 8.63
+ Lexus         | ES                  | 8.95
+ Chevrolet     | Camaro              | 2.05
+ BMW           | 645                 | 0.93
+ GMC           | 3500                | 6.52
+ Chevrolet     | Express 1500        | 3.15
+ Ford          | F-Series            | 0.10
+ Mercury       | Sable               | 1.78
+ Saturn        | S-Series            | 1.25
+ Buick         | Century             | 5.04
+ Mazda         | 626                 | 0.43
+ Volkswagen    | GTI                 | 2.72
+ BMW           | X6                  | 9.07
+ Mazda         | MX-5                | 7.68
+ Ford          | GT500               | 8.58
+ Mercedes-Benz | 300SE               | 1.84
+ GMC           | Yukon XL 2500       | 8.51
+ Lexus         | GS                  | 2.41
+ Volkswagen    | Cabriolet           | 3.04
+ Plymouth      | Breeze              | 7.31
+ Acura         | NSX                 | 6.44
+ Pontiac       | Parisienne          | 4.93
+ GMC           | 1500                | 1.40
+ Ford          | Contour             | 5.64
+ BMW           | 6 Series            | 8.66
+ Volkswagen    | Passat              | 1.44
+ Chevrolet     | Cobalt              | 8.69
+ Lexus         | RX Hybrid           | 0.07
+(90 rows)
+         
+test2=# 
+test2=# 
+test2=# 
+test2=# 
+test2=# 
+test2=# 
+test2=# 
+test2=# 
+test2=# 
+test2=# select distinct make,model,max(price) from car group by make,model;
+     make      |        model        | max  
+---------------+---------------------+------
+ Lexus         | RX Hybrid           | 0.07
+ Honda         | Civic               | 5.35
+ Toyota        | Tacoma Xtra         | 6.57
+ Dodge         | Dakota              | 1.42
+ Ford          | Ranger              | 4.31
+ Jeep          | Cherokee            | 8.54
+ Chevrolet     | Aveo                | 9.67
+ Nissan        | Quest               | 4.22
+ Saab          | 900                 | 7.37
+ Kia           | Rio                 | 8.58
+ Porsche       | 928                 | 5.53
+ Buick         | LeSabre             | 6.95
+ Chevrolet     | Silverado 2500      | 7.28
+ Chevrolet     | Sportvan G30        | 2.99
+ Toyota        | Echo                | 2.44
+ Chevrolet     | 1500                | 7.23
+ Mazda         | Miata MX-5          | 9.02
+ Mitsubishi    | Montero             | 8.76
+ Mazda         | B-Series            | 6.68
+ Ford          | E-Series            | 6.47
+ Mazda         | Mazda6              | 0.80
+ GMC           | Savana 3500         | 4.98
+ Ford          | Five Hundred        | 2.53
+ Hyundai       | Equus               | 2.90
+ Audi          | A6                  | 4.29
+ Subaru        | Impreza             | 4.50
+ Eagle         | Talon               | 4.66
+ Land Rover    | Discovery           | 5.40
+ Pontiac       | Grand Am            | 7.45
+ Volkswagen    | Rabbit              | 3.01
+ Chevrolet     | Venture             | 3.92
+ Ford          | Taurus              | 7.13
+ Suzuki        | Grand Vitara        | 9.99
+ Lexus         | GS                  | 2.73
+ Chrysler      | Town & Country      | 5.50
+ Dodge         | Grand Caravan       | 3.33
+ Volkswagen    | Fox                 | 7.56
+ Mercury       | Marquis             | 7.69
+ BMW           | Z8                  | 5.37
+ Subaru        | Baja                | 9.60
+ Ford          | F-Series Super Duty | 9.68
+ Honda         | Prelude             | 3.88
+ Chevrolet     | Malibu              | 8.67
+ Honda         | Insight             | 6.50
+ Chevrolet     | Lumina APV          | 6.00
+ Acura         | TL                  | 0.90
+ Land Rover    | Freelander          | 2.29
+ Ford          | Laser               | 5.27
+ Audi          | 100                 | 3.64
+ Buick         | Regal               | 4.32
+ Chevrolet     | Sportvan G20        | 9.20
+ Ford          | E150                | 8.56
+ Saab          | 9-5                 | 8.36
+ Infiniti      | EX                  | 2.24
+ Mercedes-Benz | CLS-Class           | 2.38
+ Volvo         | S80                 | 2.51
+ Mercedes-Benz | SL-Class            | 4.79
+ Chevrolet     | Cavalier            | 1.07
+ Chevrolet     | Express 3500        | 7.78
+ Pontiac       | Turbo Firefly       | 6.98
+ Oldsmobile    | Aurora              | 4.78
+ Oldsmobile    | Achieva             | 2.86
+ Mercury       | Topaz               | 8.63
+ Lexus         | ES                  | 8.95
+ Chevrolet     | Camaro              | 2.05
+ BMW           | 645                 | 0.93
+ Nissan        | Maxima              | 6.23
+ GMC           | 3500                | 6.52
+ Chevrolet     | Express 1500        | 3.15
+ Scion         | tC                  | 7.85
+ Ford          | F-Series            | 0.10
+ Mercury       | Sable               | 1.78
+ Saturn        | S-Series            | 1.25
+ Buick         | Century             | 5.04
+ Mazda         | 626                 | 0.43
+ Volkswagen    | GTI                 | 2.72
+ BMW           | X6                  | 9.07
+ Mazda         | MX-5                | 7.68
+ Ford          | GT500               | 8.58
+ Mercedes-Benz | 300SE               | 1.84
+ GMC           | Yukon XL 2500       | 8.51
+ Volkswagen    | Cabriolet           | 3.04
+ Plymouth      | Breeze              | 7.31
+ Volkswagen    | Passat              | 7.34
+ Acura         | NSX                 | 6.44
+ Pontiac       | Parisienne          | 4.93
+ GMC           | 1500                | 1.40
+ Ford          | Contour             | 5.64
+ BMW           | 6 Series            | 8.66
+ Chevrolet     | Cobalt              | 8.69
+(90 rows)
+         
+test2=# 
+test2=# 
+test2=# 
+test2=# 
+test2=# 
+test2=# 
+test2=# 
+test2=# 
+test2=# select distinct make,max(price) from car group by make;
+     make      | max  
+---------------+------
+ Porsche       | 5.53
+ Nissan        | 6.23
+ Ford          | 9.68
+ Mazda         | 9.02
+ Mercury       | 8.63
+ Volkswagen    | 7.56
+ Chevrolet     | 9.67
+ Land Rover    | 5.40
+ Suzuki        | 9.99
+ Honda         | 6.50
+ Oldsmobile    | 4.78
+ Dodge         | 3.33
+ Volvo         | 2.51
+ Mercedes-Benz | 4.79
+ Saturn        | 1.25
+ Toyota        | 6.57
+ Infiniti      | 2.24
+ Mitsubishi    | 8.76
+ Kia           | 8.58
+ Jeep          | 8.54
+ GMC           | 8.51
+ Scion         | 7.85
+ BMW           | 9.07
+ Saab          | 8.36
+ Subaru        | 9.60
+ Buick         | 6.95
+ Plymouth      | 7.31
+ Audi          | 4.29
+ Acura         | 6.44
+ Eagle         | 4.66
+ Lexus         | 8.95
+ Pontiac       | 7.45
+ Chrysler      | 5.50
+ Hyundai       | 2.90
+(34 rows)
+         
+test2=# 
+test2=# select distinct make,min(price) from car group by make;
+     make      | min  
+---------------+------
+ Porsche       | 5.53
+ Mercedes-Benz | 1.84
+ Mercury       | 1.78
+ Saab          | 7.37
+ Buick         | 4.32
+ Dodge         | 1.42
+ Subaru        | 4.50
+ Suzuki        | 9.99
+ Oldsmobile    | 2.86
+ Chevrolet     | 1.07
+ GMC           | 1.40
+ Volvo         | 2.51
+ Saturn        | 1.25
+ Infiniti      | 2.24
+ Scion         | 2.14
+ Mitsubishi    | 8.76
+ Kia           | 8.58
+ Jeep          | 8.54
+ Honda         | 3.40
+ Mazda         | 0.43
+ Pontiac       | 4.05
+ Volkswagen    | 1.44
+ Plymouth      | 7.31
+ Acura         | 0.90
+ BMW           | 0.93
+ Land Rover    | 2.29
+ Audi          | 3.64
+ Lexus         | 0.07
+ Eagle         | 4.66
+ Chrysler      | 5.50
+ Hyundai       | 2.90
+ Nissan        | 1.16
+ Ford          | 0.10
+ Toyota        | 1.52
+(34 rows)
+         
+test2=# select distinct make,avg(price) from car group by make;
+     make      |          avg           
+---------------+------------------------
+ Mercedes-Benz |     3.0033333333333333
+ Porsche       |     5.5300000000000000
+ Toyota        |     3.5100000000000000
+ Audi          |     3.9650000000000000
+ Volkswagen    |     4.1850000000000000
+ Pontiac       |     5.8525000000000000
+ Nissan        |     3.2700000000000000
+ Suzuki        |     9.9900000000000000
+ Scion         |     4.9950000000000000
+ GMC           |     5.3525000000000000
+ Volvo         |     2.5100000000000000
+ Lexus         |     3.5400000000000000
+ Saturn        | 1.25000000000000000000
+ Acura         |     3.6700000000000000
+ Infiniti      |     2.2400000000000000
+ Mitsubishi    |     8.7600000000000000
+ Kia           |     8.5800000000000000
+ Jeep          |     8.5400000000000000
+ BMW           |     6.0075000000000000
+ Chevrolet     |     5.7842857142857143
+ Mercury       |     6.0333333333333333
+ Plymouth      |     7.3100000000000000
+ Oldsmobile    |     3.8200000000000000
+ Buick         |     5.4366666666666667
+ Mazda         |     4.9220000000000000
+ Honda         |     4.7825000000000000
+ Saab          |     7.8650000000000000
+ Subaru        |     7.0500000000000000
+ Eagle         |     4.6600000000000000
+ Ford          |     5.6700000000000000
+ Chrysler      |     5.5000000000000000
+ Hyundai       |     2.9000000000000000
+ Land Rover    |     3.8450000000000000
+ Dodge         |     2.3750000000000000
+(34 rows)
+         
+test2=# 
+test2=# 
+test2=# 
+test2=# 
+test2=# 
+test2=# 
+test2=# 
+test2=# 
+test2=# 
+test2=# 
+test2=# 
+test2=# 
+test2=# 
+test2=# 
+test2=# 
+test2=# 
+test2=# 
+test2=# 
+test2=# 
+test2=# 
+test2=# select sum(price) from car;
+  sum   
+--------
+ 505.18
+(1 row)
+
+test2=# select sum(price) group by maker from car;
+ERROR:  syntax error at or near "from"
+LINE 1: select sum(price) group by maker from car;
+                                         ^
+test2=# select sum(price) from car group by maker;
+ERROR:  column "maker" does not exist
+LINE 1: select sum(price) from car group by maker;
+                                            ^
+HINT:  Perhaps you meant to reference the column "car.make".
+test2=# select sum(price) from car group by make;
+  sum  
+-------
+ 19.13
+ 62.37
+  9.99
+  4.75
+ 80.98
+  1.25
+  2.24
+ 23.41
+  5.53
+  7.31
+  7.93
+ 14.16
+  8.58
+  9.01
+  7.64
+  7.69
+  8.54
+  2.51
+ 16.31
+  7.34
+ 13.08
+  2.90
+  9.99
+ 15.73
+  8.76
+ 14.10                                                  
+ 24.61   
+ 24.03   
+ 25.11   
+ 18.10   
+  4.66   
+  5.50   
+ 10.53   
+ 21.41   
+(34 rows)
+         
+test2=# 
+test2=# 
+test2=# 
+test2=# 
+test2=# 
+test2=# 
+test2=# 
+test2=# 
+test2=# 
+test2=# 
+test2=# 
+test2=# select make,avg(price) from car group by make;
+     make      |          avg           
+---------------+------------------------
+ Honda         |     4.7825000000000000
+ Ford          |     5.6700000000000000
+ Scion         |     4.9950000000000000
+ Dodge         |     2.3750000000000000
+ Chevrolet     |     5.7842857142857143
+ Saturn        | 1.25000000000000000000
+ Infiniti      |     2.2400000000000000
+ Pontiac       |     5.8525000000000000
+ Porsche       |     5.5300000000000000
+ Plymouth      |     7.3100000000000000
+ Audi          |     3.9650000000000000
+ Lexus         |     3.5400000000000000
+ Kia           |     8.5800000000000000
+ Mercedes-Benz |     3.0033333333333333
+ Oldsmobile    |     3.8200000000000000
+ Land Rover    |     3.8450000000000000
+ Jeep          |     8.5400000000000000
+ Volvo         |     2.5100000000000000
+ Buick         |     5.4366666666666667
+ Acura         |     3.6700000000000000
+ Nissan        |     3.2700000000000000
+ Hyundai       |     2.9000000000000000
+ Suzuki        |     9.9900000000000000
+ Saab          |     7.8650000000000000
+ Mitsubishi    |     8.7600000000000000
+ Subaru        |     7.0500000000000000
+ Mazda         |     4.9220000000000000
+ BMW           |     6.0075000000000000
+ Volkswagen    |     4.1850000000000000
+ Mercury       |     6.0333333333333333
+ Eagle         |     4.6600000000000000
+ Chrysler      |     5.5000000000000000
+ Toyota        |     3.5100000000000000
+ GMC           |     5.3525000000000000
+(34 rows)
+         
+test2=# 
+test2=# 
+test2=# selecct 5!;
+ERROR:  syntax error at or near "selecct"
+LINE 1: selecct 5!;
+        ^
+test2=# select 5!;
+ERROR:  syntax error at or near ";"
+LINE 1: select 5!;
+                 ^
+test2=# select 5!;
+ERROR:  syntax error at or near ";"
+LINE 1: select 5!;
+                 ^
+test2=# select 5!
+test2-# ;
+ERROR:  syntax error at or near ";"
+LINE 2: ;
+        ^
+test2=# select 5+5;
+ ?column? 
+----------
+       10
+(1 row)
+
+test2=# select 5%2;
+ ?column? 
+----------
+        1
+(1 row)
+
+test2=# select 5!;
+ERROR:  syntax error at or near ";"
+LINE 1: select 5!;
+                 ^
+test2=# select * from car;
+ id  |     make      |        model        | price 
+-----+---------------+---------------------+-------
+   1 | Lexus         | ES                  |  8.95
+   2 | BMW           | Z8                  |  5.37
+   3 | Saab          | 9-5                 |  8.36
+   4 | Audi          | 100                 |  3.64
+   5 | Ford          | Taurus              |  4.10
+   6 | BMW           | 6 Series            |  8.66
+   7 | Chevrolet     | Sportvan G30        |  2.99
+   8 | Infiniti      | EX                  |  2.24
+   9 | Ford          | E150                |  8.56
+  10 | Mazda         | Mazda6              |  0.80
+  11 | Suzuki        | Grand Vitara        |  9.99
+  12 | Volkswagen    | Passat              |  7.34
+  13 | Toyota        | Tacoma Xtra         |  6.57
+  14 | Saab          | 900                 |  7.37
+  15 | GMC           | 1500                |  1.40
+  16 | Honda         | Prelude             |  3.88
+  17 | Nissan        | Maxima              |  6.23
+  18 | Dodge         | Dakota              |  1.42
+  19 | Buick         | Regal               |  4.32
+  20 | Chevrolet     | Venture             |  3.92
+  21 | Oldsmobile    | Aurora              |  4.78
+  22 | Buick         | LeSabre             |  6.95
+  23 | Lexus         | RX Hybrid           |  0.07
+  24 | Pontiac       | Turbo Firefly       |  6.98
+  25 | Plymouth      | Breeze              |  7.31
+  26 | BMW           | X6                  |  9.07
+  27 | Ford          | GT500               |  8.58
+  28 | Pontiac       | Grand Am            |  4.05
+  29 | Subaru        | Baja                |  9.60
+  30 | Chrysler      | Town & Country      |  5.50
+  31 | Saturn        | S-Series            |  1.25
+  32 | Chevrolet     | Camaro              |  2.05
+  33 | GMC           | Savana 3500         |  4.98
+  34 | BMW           | 645                 |  0.93
+  35 | Volkswagen    | Cabriolet           |  3.04
+  36 | GMC           | 3500                |  6.52
+  37 | Jeep          | Cherokee            |  8.54
+  38 | Mazda         | MX-5                |  7.68
+  39 | Nissan        | Quest               |  4.22
+  40 | Mercury       | Sable               |  1.78
+  41 | Chevrolet     | Aveo                |  9.67
+  42 | Kia           | Rio                 |  8.58
+  43 | Subaru        | Impreza             |  4.50
+  44 | Ford          | Laser               |  5.27
+  45 | Mercedes-Benz | SL-Class            |  4.79
+  46 | Nissan        | Quest               |  1.16
+  47 | Chevrolet     | Lumina APV          |  6.00
+  48 | Mercedes-Benz | CLS-Class           |  2.38
+  49 | Mazda         | Miata MX-5          |  9.02
+  50 | Dodge         | Grand Caravan       |  3.33
+  51 | Ford          | Ranger              |  4.31
+  52 | Volkswagen    | GTI                 |  2.72
+  53 | Buick         | Century             |  5.04
+  54 | Chevrolet     | Silverado 2500      |  7.28
+  55 | Chevrolet     | 1500                |  3.28
+  56 | Mercedes-Benz | 300SE               |  1.84
+  57 | Mazda         | 626                 |  0.43
+  58 | Volkswagen    | Rabbit              |  3.01
+  59 | Scion         | tC                  |  7.85
+  60 | Hyundai       | Equus               |  2.90
+  61 | Lexus         | GS                  |  2.41
+  62 | Honda         | Civic               |  3.40
+  63 | Nissan        | Maxima              |  1.47
+  64 | Eagle         | Talon               |  4.66
+  65 | Ford          | Taurus              |  7.13
+  66 | Volkswagen    | Fox                 |  7.56
+  67 | Land Rover    | Discovery           |  5.40
+  68 | Scion         | tC                  |  2.14
+  69 | Chevrolet     | Cavalier            |  1.07
+  70 | Ford          | F-Series            |  0.10
+  71 | Chevrolet     | Cobalt              |  8.69
+  72 | Chevrolet     | Express 1500        |  3.15
+  73 | Volvo         | S80                 |  2.51
+  74 | Honda         | Insight             |  6.50
+  75 | Honda         | Civic               |  5.35
+  76 | Mercury       | Marquis             |  7.69
+  77 | Mazda         | B-Series            |  6.68
+  78 | Oldsmobile    | Achieva             |  2.86
+  79 | GMC           | Yukon XL 2500       |  8.51
+  80 | Porsche       | 928                 |  5.53
+  81 | Land Rover    | Freelander          |  2.29
+  82 | Audi          | A6                  |  4.29
+  83 | Toyota        | Tacoma Xtra         |  1.52
+  84 | Acura         | NSX                 |  6.44
+  85 | Mercury       | Topaz               |  8.63
+  86 | Ford          | E-Series            |  6.47
+  87 | Ford          | F-Series Super Duty |  9.68
+  88 | Chevrolet     | Sportvan G20        |  9.20
+  89 | Volkswagen    | Passat              |  1.44
+  90 | Ford          | Five Hundred        |  2.53
+  91 | Acura         | TL                  |  0.90
+  92 | Toyota        | Echo                |  2.44
+  93 | Lexus         | GS                  |  2.73
+  94 | Ford          | Contour             |  5.64
+  95 | Pontiac       | Parisienne          |  4.93
+  96 | Chevrolet     | Express 3500        |  7.78
+  97 | Pontiac       | Grand Am            |  7.45
+  98 | Chevrolet     | 1500                |  7.23
+  99 | Mitsubishi    | Montero             |  8.76
+ 100 | Chevrolet     | Malibu              |  8.67
+(100 rows)
+         
+test2=# 
+test2=# 
+test2=# 
+test2=# 
+test2=# select id , make, model, price*.10 from car;
+ id  |     make      |        model        | ?column? 
+-----+---------------+---------------------+----------
+   1 | Lexus         | ES                  |   0.8950
+   2 | BMW           | Z8                  |   0.5370
+   3 | Saab          | 9-5                 |   0.8360
+   4 | Audi          | 100                 |   0.3640
+   5 | Ford          | Taurus              |   0.4100
+   6 | BMW           | 6 Series            |   0.8660
+   7 | Chevrolet     | Sportvan G30        |   0.2990
+   8 | Infiniti      | EX                  |   0.2240
+   9 | Ford          | E150                |   0.8560
+  10 | Mazda         | Mazda6              |   0.0800
+  11 | Suzuki        | Grand Vitara        |   0.9990
+  12 | Volkswagen    | Passat              |   0.7340
+  13 | Toyota        | Tacoma Xtra         |   0.6570
+  14 | Saab          | 900                 |   0.7370
+  15 | GMC           | 1500                |   0.1400
+  16 | Honda         | Prelude             |   0.3880
+  17 | Nissan        | Maxima              |   0.6230
+  18 | Dodge         | Dakota              |   0.1420
+  19 | Buick         | Regal               |   0.4320
+  20 | Chevrolet     | Venture             |   0.3920
+  21 | Oldsmobile    | Aurora              |   0.4780
+  22 | Buick         | LeSabre             |   0.6950
+  23 | Lexus         | RX Hybrid           |   0.0070
+  24 | Pontiac       | Turbo Firefly       |   0.6980
+  25 | Plymouth      | Breeze              |   0.7310
+  26 | BMW           | X6                  |   0.9070   
+  27 | Ford          | GT500               |   0.8580
+  28 | Pontiac       | Grand Am            |   0.4050
+  29 | Subaru        | Baja                |   0.9600
+  30 | Chrysler      | Town & Country      |   0.5500
+  31 | Saturn        | S-Series            |   0.1250
+  32 | Chevrolet     | Camaro              |   0.2050
+  33 | GMC           | Savana 3500         |   0.4980
+  34 | BMW           | 645                 |   0.0930
+  35 | Volkswagen    | Cabriolet           |   0.3040
+  36 | GMC           | 3500                |   0.6520
+  37 | Jeep          | Cherokee            |   0.8540
+  38 | Mazda         | MX-5                |   0.7680
+  39 | Nissan        | Quest               |   0.4220
+  40 | Mercury       | Sable               |   0.1780
+  41 | Chevrolet     | Aveo                |   0.9670
+  42 | Kia           | Rio                 |   0.8580
+  43 | Subaru        | Impreza             |   0.4500
+  44 | Ford          | Laser               |   0.5270
+  45 | Mercedes-Benz | SL-Class            |   0.4790
+  46 | Nissan        | Quest               |   0.1160
+  47 | Chevrolet     | Lumina APV          |   0.6000
+  48 | Mercedes-Benz | CLS-Class           |   0.2380
+  49 | Mazda         | Miata MX-5          |   0.9020
+  50 | Dodge         | Grand Caravan       |   0.3330
+  51 | Ford          | Ranger              |   0.4310
+  52 | Volkswagen    | GTI                 |   0.2720
+  53 | Buick         | Century             |   0.5040
+  54 | Chevrolet     | Silverado 2500      |   0.7280
+  55 | Chevrolet     | 1500                |   0.3280
+  56 | Mercedes-Benz | 300SE               |   0.1840
+  57 | Mazda         | 626                 |   0.0430
+  58 | Volkswagen    | Rabbit              |   0.3010
+  59 | Scion         | tC                  |   0.7850
+  60 | Hyundai       | Equus               |   0.2900
+  61 | Lexus         | GS                  |   0.2410
+  62 | Honda         | Civic               |   0.3400
+  63 | Nissan        | Maxima              |   0.1470
+  64 | Eagle         | Talon               |   0.4660
+  65 | Ford          | Taurus              |   0.7130
+  66 | Volkswagen    | Fox                 |   0.7560
+  67 | Land Rover    | Discovery           |   0.5400
+  68 | Scion         | tC                  |   0.2140
+  69 | Chevrolet     | Cavalier            |   0.1070
+  70 | Ford          | F-Series            |   0.0100
+  71 | Chevrolet     | Cobalt              |   0.8690
+  72 | Chevrolet     | Express 1500        |   0.3150
+  73 | Volvo         | S80                 |   0.2510
+  74 | Honda         | Insight             |   0.6500
+  75 | Honda         | Civic               |   0.5350
+  76 | Mercury       | Marquis             |   0.7690
+  77 | Mazda         | B-Series            |   0.6680
+  78 | Oldsmobile    | Achieva             |   0.2860
+  79 | GMC           | Yukon XL 2500       |   0.8510
+  80 | Porsche       | 928                 |   0.5530
+  81 | Land Rover    | Freelander          |   0.2290
+  82 | Audi          | A6                  |   0.4290
+  83 | Toyota        | Tacoma Xtra         |   0.1520
+  84 | Acura         | NSX                 |   0.6440
+  85 | Mercury       | Topaz               |   0.8630
+  86 | Ford          | E-Series            |   0.6470
+  87 | Ford          | F-Series Super Duty |   0.9680
+  88 | Chevrolet     | Sportvan G20        |   0.9200
+  89 | Volkswagen    | Passat              |   0.1440
+  90 | Ford          | Five Hundred        |   0.2530
+  91 | Acura         | TL                  |   0.0900
+  92 | Toyota        | Echo                |   0.2440
+  93 | Lexus         | GS                  |   0.2730
+  94 | Ford          | Contour             |   0.5640
+  95 | Pontiac       | Parisienne          |   0.4930
+  96 | Chevrolet     | Express 3500        |   0.7780
+  97 | Pontiac       | Grand Am            |   0.7450
+  98 | Chevrolet     | 1500                |   0.7230
+  99 | Mitsubishi    | Montero             |   0.8760
+ 100 | Chevrolet     | Malibu              |   0.8670
+(100 rows)
+
+test2=# select id , make, model,price, price*.10 from car;
+ id  |     make      |        model        | price | ?column? 
+-----+---------------+---------------------+-------+----------
+   1 | Lexus         | ES                  |  8.95 |   0.8950
+   2 | BMW           | Z8                  |  5.37 |   0.5370
+   3 | Saab          | 9-5                 |  8.36 |   0.8360
+   4 | Audi          | 100                 |  3.64 |   0.3640
+   5 | Ford          | Taurus              |  4.10 |   0.4100
+   6 | BMW           | 6 Series            |  8.66 |   0.8660
+   7 | Chevrolet     | Sportvan G30        |  2.99 |   0.2990
+   8 | Infiniti      | EX                  |  2.24 |   0.2240
+   9 | Ford          | E150                |  8.56 |   0.8560
+  10 | Mazda         | Mazda6              |  0.80 |   0.0800
+  11 | Suzuki        | Grand Vitara        |  9.99 |   0.9990
+  12 | Volkswagen    | Passat              |  7.34 |   0.7340
+  13 | Toyota        | Tacoma Xtra         |  6.57 |   0.6570
+  14 | Saab          | 900                 |  7.37 |   0.7370
+  15 | GMC           | 1500                |  1.40 |   0.1400
+  16 | Honda         | Prelude             |  3.88 |   0.3880
+  17 | Nissan        | Maxima              |  6.23 |   0.6230
+  18 | Dodge         | Dakota              |  1.42 |   0.1420
+  19 | Buick         | Regal               |  4.32 |   0.4320
+  20 | Chevrolet     | Venture             |  3.92 |   0.3920
+  21 | Oldsmobile    | Aurora              |  4.78 |   0.4780
+  22 | Buick         | LeSabre             |  6.95 |   0.6950
+  23 | Lexus         | RX Hybrid           |  0.07 |   0.0070
+  24 | Pontiac       | Turbo Firefly       |  6.98 |   0.6980
+  25 | Plymouth      | Breeze              |  7.31 |   0.7310
+  26 | BMW           | X6                  |  9.07 |   0.9070
+  27 | Ford          | GT500               |  8.58 |   0.8580
+  28 | Pontiac       | Grand Am            |  4.05 |   0.4050
+  29 | Subaru        | Baja                |  9.60 |   0.9600
+  30 | Chrysler      | Town & Country      |  5.50 |   0.5500
+  31 | Saturn        | S-Series            |  1.25 |   0.1250
+  32 | Chevrolet     | Camaro              |  2.05 |   0.2050
+  33 | GMC           | Savana 3500         |  4.98 |   0.4980
+  34 | BMW           | 645                 |  0.93 |   0.0930
+  35 | Volkswagen    | Cabriolet           |  3.04 |   0.3040
+  36 | GMC           | 3500                |  6.52 |   0.6520
+  37 | Jeep          | Cherokee            |  8.54 |   0.8540
+  38 | Mazda         | MX-5                |  7.68 |   0.7680
+  39 | Nissan        | Quest               |  4.22 |   0.4220
+  40 | Mercury       | Sable               |  1.78 |   0.1780
+  41 | Chevrolet     | Aveo                |  9.67 |   0.9670
+  42 | Kia           | Rio                 |  8.58 |   0.8580
+  43 | Subaru        | Impreza             |  4.50 |   0.4500
+  44 | Ford          | Laser               |  5.27 |   0.5270
+  45 | Mercedes-Benz | SL-Class            |  4.79 |   0.4790
+  46 | Nissan        | Quest               |  1.16 |   0.1160
+  47 | Chevrolet     | Lumina APV          |  6.00 |   0.6000
+  48 | Mercedes-Benz | CLS-Class           |  2.38 |   0.2380
+  49 | Mazda         | Miata MX-5          |  9.02 |   0.9020
+  50 | Dodge         | Grand Caravan       |  3.33 |   0.3330
+  51 | Ford          | Ranger              |  4.31 |   0.4310
+  52 | Volkswagen    | GTI                 |  2.72 |   0.2720
+  53 | Buick         | Century             |  5.04 |   0.5040
+  54 | Chevrolet     | Silverado 2500      |  7.28 |   0.7280
+  55 | Chevrolet     | 1500                |  3.28 |   0.3280
+  56 | Mercedes-Benz | 300SE               |  1.84 |   0.1840
+  57 | Mazda         | 626                 |  0.43 |   0.0430
+  58 | Volkswagen    | Rabbit              |  3.01 |   0.3010
+  59 | Scion         | tC                  |  7.85 |   0.7850
+  60 | Hyundai       | Equus               |  2.90 |   0.2900
+  61 | Lexus         | GS                  |  2.41 |   0.2410
+  62 | Honda         | Civic               |  3.40 |   0.3400
+  63 | Nissan        | Maxima              |  1.47 |   0.1470
+  64 | Eagle         | Talon               |  4.66 |   0.4660
+  65 | Ford          | Taurus              |  7.13 |   0.7130
+  66 | Volkswagen    | Fox                 |  7.56 |   0.7560
+  67 | Land Rover    | Discovery           |  5.40 |   0.5400
+  68 | Scion         | tC                  |  2.14 |   0.2140
+  69 | Chevrolet     | Cavalier            |  1.07 |   0.1070
+  70 | Ford          | F-Series            |  0.10 |   0.0100
+  71 | Chevrolet     | Cobalt              |  8.69 |   0.8690
+  72 | Chevrolet     | Express 1500        |  3.15 |   0.3150
+  73 | Volvo         | S80                 |  2.51 |   0.2510
+  74 | Honda         | Insight             |  6.50 |   0.6500
+  75 | Honda         | Civic               |  5.35 |   0.5350
+  76 | Mercury       | Marquis             |  7.69 |   0.7690
+  77 | Mazda         | B-Series            |  6.68 |   0.6680
+  78 | Oldsmobile    | Achieva             |  2.86 |   0.2860
+  79 | GMC           | Yukon XL 2500       |  8.51 |   0.8510
+  80 | Porsche       | 928                 |  5.53 |   0.5530
+  81 | Land Rover    | Freelander          |  2.29 |   0.2290
+  82 | Audi          | A6                  |  4.29 |   0.4290
+  83 | Toyota        | Tacoma Xtra         |  1.52 |   0.1520
+  84 | Acura         | NSX                 |  6.44 |   0.6440
+  85 | Mercury       | Topaz               |  8.63 |   0.8630
+  86 | Ford          | E-Series            |  6.47 |   0.6470
+  87 | Ford          | F-Series Super Duty |  9.68 |   0.9680
+  88 | Chevrolet     | Sportvan G20        |  9.20 |   0.9200
+  89 | Volkswagen    | Passat              |  1.44 |   0.1440
+  90 | Ford          | Five Hundred        |  2.53 |   0.2530
+  91 | Acura         | TL                  |  0.90 |   0.0900
+  92 | Toyota        | Echo                |  2.44 |   0.2440
+  93 | Lexus         | GS                  |  2.73 |   0.2730
+  94 | Ford          | Contour             |  5.64 |   0.5640
+  95 | Pontiac       | Parisienne          |  4.93 |   0.4930
+  96 | Chevrolet     | Express 3500        |  7.78 |   0.7780
+  97 | Pontiac       | Grand Am            |  7.45 |   0.7450
+  98 | Chevrolet     | 1500                |  7.23 |   0.7230
+  99 | Mitsubishi    | Montero             |  8.76 |   0.8760
+ 100 | Chevrolet     | Malibu              |  8.67 |   0.8670
+(100 rows)
+
+test2=# select id, make , model , price, round(price* 0.10, 2),round(price -(price * 0.10) ,2) from car;
+ id  |     make      |        model        | price | round | round 
+-----+---------------+---------------------+-------+-------+-------
+   1 | Lexus         | ES                  |  8.95 |  0.90 |  8.06
+   2 | BMW           | Z8                  |  5.37 |  0.54 |  4.83
+   3 | Saab          | 9-5                 |  8.36 |  0.84 |  7.52
+   4 | Audi          | 100                 |  3.64 |  0.36 |  3.28
+   5 | Ford          | Taurus              |  4.10 |  0.41 |  3.69
+   6 | BMW           | 6 Series            |  8.66 |  0.87 |  7.79
+   7 | Chevrolet     | Sportvan G30        |  2.99 |  0.30 |  2.69
+   8 | Infiniti      | EX                  |  2.24 |  0.22 |  2.02
+   9 | Ford          | E150                |  8.56 |  0.86 |  7.70
+  10 | Mazda         | Mazda6              |  0.80 |  0.08 |  0.72
+  11 | Suzuki        | Grand Vitara        |  9.99 |  1.00 |  8.99
+  12 | Volkswagen    | Passat              |  7.34 |  0.73 |  6.61
+  13 | Toyota        | Tacoma Xtra         |  6.57 |  0.66 |  5.91
+  14 | Saab          | 900                 |  7.37 |  0.74 |  6.63
+  15 | GMC           | 1500                |  1.40 |  0.14 |  1.26
+  16 | Honda         | Prelude             |  3.88 |  0.39 |  3.49
+  17 | Nissan        | Maxima              |  6.23 |  0.62 |  5.61
+  18 | Dodge         | Dakota              |  1.42 |  0.14 |  1.28
+  19 | Buick         | Regal               |  4.32 |  0.43 |  3.89
+  20 | Chevrolet     | Venture             |  3.92 |  0.39 |  3.53
+  21 | Oldsmobile    | Aurora              |  4.78 |  0.48 |  4.30
+  22 | Buick         | LeSabre             |  6.95 |  0.70 |  6.26
+  23 | Lexus         | RX Hybrid           |  0.07 |  0.01 |  0.06
+  24 | Pontiac       | Turbo Firefly       |  6.98 |  0.70 |  6.28
+  25 | Plymouth      | Breeze              |  7.31 |  0.73 |  6.58
+  26 | BMW           | X6                  |  9.07 |  0.91 |  8.16
+  27 | Ford          | GT500               |  8.58 |  0.86 |  7.72
+  28 | Pontiac       | Grand Am            |  4.05 |  0.41 |  3.65
+  29 | Subaru        | Baja                |  9.60 |  0.96 |  8.64
+  30 | Chrysler      | Town & Country      |  5.50 |  0.55 |  4.95
+  31 | Saturn        | S-Series            |  1.25 |  0.13 |  1.13
+  32 | Chevrolet     | Camaro              |  2.05 |  0.21 |  1.85
+  33 | GMC           | Savana 3500         |  4.98 |  0.50 |  4.48
+  34 | BMW           | 645                 |  0.93 |  0.09 |  0.84
+  35 | Volkswagen    | Cabriolet           |  3.04 |  0.30 |  2.74
+  36 | GMC           | 3500                |  6.52 |  0.65 |  5.87
+  37 | Jeep          | Cherokee            |  8.54 |  0.85 |  7.69
+  38 | Mazda         | MX-5                |  7.68 |  0.77 |  6.91
+  39 | Nissan        | Quest               |  4.22 |  0.42 |  3.80
+  40 | Mercury       | Sable               |  1.78 |  0.18 |  1.60
+  41 | Chevrolet     | Aveo                |  9.67 |  0.97 |  8.70
+  42 | Kia           | Rio                 |  8.58 |  0.86 |  7.72
+  43 | Subaru        | Impreza             |  4.50 |  0.45 |  4.05
+  44 | Ford          | Laser               |  5.27 |  0.53 |  4.74
+  45 | Mercedes-Benz | SL-Class            |  4.79 |  0.48 |  4.31
+  46 | Nissan        | Quest               |  1.16 |  0.12 |  1.04
+  47 | Chevrolet     | Lumina APV          |  6.00 |  0.60 |  5.40
+  48 | Mercedes-Benz | CLS-Class           |  2.38 |  0.24 |  2.14
+  49 | Mazda         | Miata MX-5          |  9.02 |  0.90 |  8.12
+  50 | Dodge         | Grand Caravan       |  3.33 |  0.33 |  3.00
+  51 | Ford          | Ranger              |  4.31 |  0.43 |  3.88
+  52 | Volkswagen    | GTI                 |  2.72 |  0.27 |  2.45
+  53 | Buick         | Century             |  5.04 |  0.50 |  4.54
+  54 | Chevrolet     | Silverado 2500      |  7.28 |  0.73 |  6.55
+  55 | Chevrolet     | 1500                |  3.28 |  0.33 |  2.95
+  56 | Mercedes-Benz | 300SE               |  1.84 |  0.18 |  1.66
+  57 | Mazda         | 626                 |  0.43 |  0.04 |  0.39
+  58 | Volkswagen    | Rabbit              |  3.01 |  0.30 |  2.71
+  59 | Scion         | tC                  |  7.85 |  0.79 |  7.07
+  60 | Hyundai       | Equus               |  2.90 |  0.29 |  2.61
+  61 | Lexus         | GS                  |  2.41 |  0.24 |  2.17
+  62 | Honda         | Civic               |  3.40 |  0.34 |  3.06
+  63 | Nissan        | Maxima              |  1.47 |  0.15 |  1.32
+  64 | Eagle         | Talon               |  4.66 |  0.47 |  4.19
+  65 | Ford          | Taurus              |  7.13 |  0.71 |  6.42
+  66 | Volkswagen    | Fox                 |  7.56 |  0.76 |  6.80
+  67 | Land Rover    | Discovery           |  5.40 |  0.54 |  4.86
+  68 | Scion         | tC                  |  2.14 |  0.21 |  1.93
+  69 | Chevrolet     | Cavalier            |  1.07 |  0.11 |  0.96
+  70 | Ford          | F-Series            |  0.10 |  0.01 |  0.09
+  71 | Chevrolet     | Cobalt              |  8.69 |  0.87 |  7.82
+  72 | Chevrolet     | Express 1500        |  3.15 |  0.32 |  2.84
+  73 | Volvo         | S80                 |  2.51 |  0.25 |  2.26
+  74 | Honda         | Insight             |  6.50 |  0.65 |  5.85
+  75 | Honda         | Civic               |  5.35 |  0.54 |  4.82
+  76 | Mercury       | Marquis             |  7.69 |  0.77 |  6.92
+  77 | Mazda         | B-Series            |  6.68 |  0.67 |  6.01
+  78 | Oldsmobile    | Achieva             |  2.86 |  0.29 |  2.57
+  79 | GMC           | Yukon XL 2500       |  8.51 |  0.85 |  7.66
+  80 | Porsche       | 928                 |  5.53 |  0.55 |  4.98
+  81 | Land Rover    | Freelander          |  2.29 |  0.23 |  2.06
+  82 | Audi          | A6                  |  4.29 |  0.43 |  3.86
+  83 | Toyota        | Tacoma Xtra         |  1.52 |  0.15 |  1.37
+  84 | Acura         | NSX                 |  6.44 |  0.64 |  5.80
+  85 | Mercury       | Topaz               |  8.63 |  0.86 |  7.77
+  86 | Ford          | E-Series            |  6.47 |  0.65 |  5.82
+  87 | Ford          | F-Series Super Duty |  9.68 |  0.97 |  8.71
+  88 | Chevrolet     | Sportvan G20        |  9.20 |  0.92 |  8.28
+  89 | Volkswagen    | Passat              |  1.44 |  0.14 |  1.30
+  90 | Ford          | Five Hundred        |  2.53 |  0.25 |  2.28
+  91 | Acura         | TL                  |  0.90 |  0.09 |  0.81
+  92 | Toyota        | Echo                |  2.44 |  0.24 |  2.20
+  93 | Lexus         | GS                  |  2.73 |  0.27 |  2.46
+  94 | Ford          | Contour             |  5.64 |  0.56 |  5.08
+  95 | Pontiac       | Parisienne          |  4.93 |  0.49 |  4.44
+  96 | Chevrolet     | Express 3500        |  7.78 |  0.78 |  7.00
+  97 | Pontiac       | Grand Am            |  7.45 |  0.75 |  6.71
+  98 | Chevrolet     | 1500                |  7.23 |  0.72 |  6.51
+  99 | Mitsubishi    | Montero             |  8.76 |  0.88 |  7.88
+ 100 | Chevrolet     | Malibu              |  8.67 |  0.87 |  7.80
+(100 rows)
+
+test2=# Q
+test2-# select * from car;
+ERROR:  syntax error at or near "Q"
+LINE 1: Q
+        ^
+test2=# Q
+select * from car;
+test2-# 
+test2-# ;
+ERROR:  syntax error at or near "Q"
+LINE 1: Q
+        ^
+test2=# select * from car;
+ id  |     make      |        model        | price 
+-----+---------------+---------------------+-------
+   1 | Lexus         | ES                  |  8.95
+   2 | BMW           | Z8                  |  5.37
+   3 | Saab          | 9-5                 |  8.36
+   4 | Audi          | 100                 |  3.64
+   5 | Ford          | Taurus              |  4.10
+   6 | BMW           | 6 Series            |  8.66
+   7 | Chevrolet     | Sportvan G30        |  2.99
+   8 | Infiniti      | EX                  |  2.24
+   9 | Ford          | E150                |  8.56
+  10 | Mazda         | Mazda6              |  0.80
+  11 | Suzuki        | Grand Vitara        |  9.99
+  12 | Volkswagen    | Passat              |  7.34
+  13 | Toyota        | Tacoma Xtra         |  6.57
+  14 | Saab          | 900                 |  7.37
+  15 | GMC           | 1500                |  1.40
+  16 | Honda         | Prelude             |  3.88
+  17 | Nissan        | Maxima              |  6.23
+  18 | Dodge         | Dakota              |  1.42
+  19 | Buick         | Regal               |  4.32
+  20 | Chevrolet     | Venture             |  3.92
+  21 | Oldsmobile    | Aurora              |  4.78
+  22 | Buick         | LeSabre             |  6.95
+  23 | Lexus         | RX Hybrid           |  0.07
+  24 | Pontiac       | Turbo Firefly       |  6.98
+  25 | Plymouth      | Breeze              |  7.31
+  26 | BMW           | X6                  |  9.07
+  27 | Ford          | GT500               |  8.58
+  28 | Pontiac       | Grand Am            |  4.05
+  29 | Subaru        | Baja                |  9.60
+  30 | Chrysler      | Town & Country      |  5.50
+  31 | Saturn        | S-Series            |  1.25
+  32 | Chevrolet     | Camaro              |  2.05
+  33 | GMC           | Savana 3500         |  4.98
+  34 | BMW           | 645                 |  0.93
+  35 | Volkswagen    | Cabriolet           |  3.04
+  36 | GMC           | 3500                |  6.52
+  37 | Jeep          | Cherokee            |  8.54
+  38 | Mazda         | MX-5                |  7.68
+  39 | Nissan        | Quest               |  4.22
+  40 | Mercury       | Sable               |  1.78
+  41 | Chevrolet     | Aveo                |  9.67
+  42 | Kia           | Rio                 |  8.58
+  43 | Subaru        | Impreza             |  4.50
+  44 | Ford          | Laser               |  5.27
+  45 | Mercedes-Benz | SL-Class            |  4.79
+  46 | Nissan        | Quest               |  1.16
+  47 | Chevrolet     | Lumina APV          |  6.00
+  48 | Mercedes-Benz | CLS-Class           |  2.38
+  49 | Mazda         | Miata MX-5          |  9.02
+  50 | Dodge         | Grand Caravan       |  3.33
+  51 | Ford          | Ranger              |  4.31
+  52 | Volkswagen    | GTI                 |  2.72
+  53 | Buick         | Century             |  5.04
+  54 | Chevrolet     | Silverado 2500      |  7.28
+  55 | Chevrolet     | 1500                |  3.28
+  56 | Mercedes-Benz | 300SE               |  1.84
+  57 | Mazda         | 626                 |  0.43
+  58 | Volkswagen    | Rabbit              |  3.01
+  59 | Scion         | tC                  |  7.85
+  60 | Hyundai       | Equus               |  2.90
+  61 | Lexus         | GS                  |  2.41
+  62 | Honda         | Civic               |  3.40
+  63 | Nissan        | Maxima              |  1.47
+  64 | Eagle         | Talon               |  4.66
+  65 | Ford          | Taurus              |  7.13
+  66 | Volkswagen    | Fox                 |  7.56
+  67 | Land Rover    | Discovery           |  5.40
+  68 | Scion         | tC                  |  2.14
+  69 | Chevrolet     | Cavalier            |  1.07
+  70 | Ford          | F-Series            |  0.10
+  71 | Chevrolet     | Cobalt              |  8.69
+  72 | Chevrolet     | Express 1500        |  3.15
+  73 | Volvo         | S80                 |  2.51
+  74 | Honda         | Insight             |  6.50
+  75 | Honda         | Civic               |  5.35
+  76 | Mercury       | Marquis             |  7.69
+  77 | Mazda         | B-Series            |  6.68
+  78 | Oldsmobile    | Achieva             |  2.86
+  79 | GMC           | Yukon XL 2500       |  8.51
+  80 | Porsche       | 928                 |  5.53
+  81 | Land Rover    | Freelander          |  2.29
+  82 | Audi          | A6                  |  4.29
+  83 | Toyota        | Tacoma Xtra         |  1.52
+  84 | Acura         | NSX                 |  6.44
+  85 | Mercury       | Topaz               |  8.63
+  86 | Ford          | E-Series            |  6.47
+  87 | Ford          | F-Series Super Duty |  9.68
+  88 | Chevrolet     | Sportvan G20        |  9.20
+  89 | Volkswagen    | Passat              |  1.44
+  90 | Ford          | Five Hundred        |  2.53
+  91 | Acura         | TL                  |  0.90
+  92 | Toyota        | Echo                |  2.44
+  93 | Lexus         | GS                  |  2.73
+  94 | Ford          | Contour             |  5.64
+  95 | Pontiac       | Parisienne          |  4.93
+  96 | Chevrolet     | Express 3500        |  7.78
+  97 | Pontiac       | Grand Am            |  7.45
+  98 | Chevrolet     | 1500                |  7.23
+  99 | Mitsubishi    | Montero             |  8.76
+ 100 | Chevrolet     | Malibu              |  8.67
+(100 rows)
+
+test2=# select email from person;
+ERROR:  relation "person" does not exist
+LINE 1: select email from person;
+                          ^
+test2=# select email from person2;
+ERROR:  relation "person2" does not exist
+LINE 1: select email from person2;
+                          ^
+test2=# \d
+              List of relations
+ Schema |      Name       |   Type   | Owner  
+--------+-----------------+----------+--------
+ public | car             | table    | axelor
+ public | car_id_seq      | sequence | axelor
+ public | compane         | table    | axelor
+ public | department      | table    | axelor
+ public | persion         | table    | axelor
+ public | persion1        | table    | axelor
+ public | persion1_id_seq | sequence | axelor
+ public | persion2        | table    | axelor
+ public | persion2_id_seq | sequence | axelor
+ public | pro             | table    | axelor
+ public | stu             | table    | axelor
+(11 rows)
+
+test2=# select email from persion2;
+               email                
+------------------------------------
+ idignan0@theglobeandmail.com
+ 
+ egullam2@clickbank.net
+ tdauby3@netvibes.com
+ 
+ acaghy5@goo.ne.jp
+ mmartugin6@prnewswire.com
+ bstothart7@vkontakte.ru
+ csangwine8@abc.net.au
+ cannable9@microsoft.com
+ 
+ mwalkdenb@tmall.com
+ vpherpsc@usgs.gov
+ 
+ bpittlee@wsj.com
+ dbladenf@newyorker.com
+ 
+ srichardeauh@bloglines.com
+ 
+ ereadheadj@miibeian.gov.cn
+ msonnerk@seesaa.net
+ 
+ bchoulertonm@technorati.com
+ 
+ 
+         
+ 
+ sflexmanr@ihg.com
+ 
+ 
+ lkensholeu@icq.com
+ osmallshawv@hud.gov
+ jwesthoferw@themeforest.net
+ brichardsonx@cnet.com
+ lmatitiahoy@usa.gov
+ ltycez@fotki.com
+ lpalmar10@blogtalkradio.com
+ 
+ kwhitney12@ehow.com
+ scollihole13@slideshare.net
+ asprason14@paginegialle.it
+ teast15@spotify.com
+ hmewett16@linkedin.com
+ dstubs17@nsw.gov.au
+ forta18@stanford.edu
+ 
+ nmanuely1a@github.com
+ 
+ 
+ jpudan1d@1und1.de
+ galforde1e@redcross.org
+ wgobbet1f@yahoo.co.jp
+ wclinning1g@ask.com
+ otebbe1h@youtube.com
+ sapplewhaite1i@go.com
+ tkitchingham1j@wufoo.com
+ ksherwin1k@amazon.co.jp
+ lcraker1l@paypal.com
+ lgeoghegan1m@washington.edu
+ sallawy1n@amazon.co.jp
+ rthunnerclef1o@behance.net
+ 
+ ykunzler1q@php.net
+ 
+ lclashe1s@weebly.com
+ 
+ tellin1u@spiegel.de
+ fmattevi1v@discuz.net
+ jfolli1w@skyrock.com
+ 
+ kkeirle1y@wikia.com
+ 
+ asadler20@myspace.com
+ iwickenden21@nhs.uk
+ twaterhowse22@paypal.com
+ bbranca23@bravesites.com
+ zhinckley24@mit.edu
+ sshorrock25@networkadvertising.org
+ rattrey26@bandcamp.com
+ edagger27@live.com
+ sbritt28@163.com
+ mdimitrescu29@comsenz.com
+ tcrews2a@list-manage.com
+ 
+ 
+ mbayles2d@123-reg.co.uk
+ dscoon2e@mapquest.com
+ 
+ fsaer2g@fema.gov
+ dcurwood2h@mayoclinic.com
+ dgrute2i@feedburner.com
+ azeale2j@mtv.com
+ dandrat2k@oracle.com
+ 
+ 
+ mdonan2n@smh.com.au
+ wwitchard2o@nyu.edu
+ 
+ 
+ 
+(100 rows)
+
+test2=# select coalesce(eamil,'email not found') from email;
+ERROR:  relation "email" does not exist
+LINE 1: select coalesce(eamil,'email not found') from email;
+                                                      ^
+test2=# select coalesce(eamil,'email not found') from persion2;
+ERROR:  column "eamil" does not exist
+LINE 1: select coalesce(eamil,'email not found') from persion2;
+                        ^
+HINT:  Perhaps you meant to reference the column "persion2.email".
+test2=# select coalesce(email,'email not found') from persion2;
+              coalesce              
+------------------------------------
+ idignan0@theglobeandmail.com
+ email not found
+ egullam2@clickbank.net
+ tdauby3@netvibes.com
+ email not found
+ acaghy5@goo.ne.jp
+ mmartugin6@prnewswire.com
+ bstothart7@vkontakte.ru
+ csangwine8@abc.net.au
+ cannable9@microsoft.com
+ email not found
+ mwalkdenb@tmall.com
+ vpherpsc@usgs.gov
+ email not found
+ bpittlee@wsj.com
+ dbladenf@newyorker.com
+ email not found
+ srichardeauh@bloglines.com
+ email not found
+ ereadheadj@miibeian.gov.cn
+ msonnerk@seesaa.net
+ email not found
+ bchoulertonm@technorati.com
+ email not found
+ email not found
+ email not found
+ email not found
+ sflexmanr@ihg.com
+ email not found
+ email not found
+ lkensholeu@icq.com
+ osmallshawv@hud.gov
+ jwesthoferw@themeforest.net
+ brichardsonx@cnet.com
+ lmatitiahoy@usa.gov
+ ltycez@fotki.com
+ lpalmar10@blogtalkradio.com
+ email not found
+ kwhitney12@ehow.com
+ scollihole13@slideshare.net
+ asprason14@paginegialle.it
+ teast15@spotify.com
+ hmewett16@linkedin.com
+ dstubs17@nsw.gov.au
+ forta18@stanford.edu
+ email not found
+ nmanuely1a@github.com
+ email not found
+ email not found
+ jpudan1d@1und1.de
+ galforde1e@redcross.org
+ wgobbet1f@yahoo.co.jp
+ wclinning1g@ask.com
+ otebbe1h@youtube.com
+ sapplewhaite1i@go.com
+ tkitchingham1j@wufoo.com
+ ksherwin1k@amazon.co.jp
+ lcraker1l@paypal.com
+ lgeoghegan1m@washington.edu
+ sallawy1n@amazon.co.jp
+ rthunnerclef1o@behance.net
+ email not found
+ ykunzler1q@php.net
+ email not found
+ lclashe1s@weebly.com
+ email not found
+ tellin1u@spiegel.de
+ fmattevi1v@discuz.net
+ jfolli1w@skyrock.com
+ email not found
+ kkeirle1y@wikia.com
+ email not found
+ asadler20@myspace.com
+ iwickenden21@nhs.uk
+ twaterhowse22@paypal.com
+ bbranca23@bravesites.com
+ zhinckley24@mit.edu
+ sshorrock25@networkadvertising.org
+ rattrey26@bandcamp.com
+ edagger27@live.com
+ sbritt28@163.com
+ mdimitrescu29@comsenz.com
+ tcrews2a@list-manage.com
+ email not found
+ email not found
+ mbayles2d@123-reg.co.uk
+ dscoon2e@mapquest.com
+ email not found
+ fsaer2g@fema.gov
+ dcurwood2h@mayoclinic.com
+ dgrute2i@feedburner.com
+ azeale2j@mtv.com
+ dandrat2k@oracle.com
+ email not found
+ email not found
+ mdonan2n@smh.com.au
+ wwitchard2o@nyu.edu
+ email not found
+ email not found
+ email not found
+(100 rows)
+
+test2=# select 10/0;
+ERROR:  division by zero
+test2=# select null (10,10);
+ERROR:  syntax error at or near "("
+LINE 1: select null (10,10);
+                    ^
+test2=# select nullif(10,10);
+ nullif 
+--------
+       
+(1 row)
+
+test2=# select now();
+              now              
+-------------------------------
+ 2022-10-25 08:45:00.611526+00
+(1 row)
+
+test2=# select now()::date;
+    now     
+------------
+ 2022-10-25
+(1 row)
+
+test2=# select now()::time;
+       now       
+-----------------
+ 08:45:45.897206
+(1 row)
+
+test2=# select now() - interval '1 year';
+           ?column?            
+-------------------------------
+ 2021-10-25 08:47:00.499932+00
+(1 row)
+
+test2=# select now() + interval '1 year';
+           ?column?            
+-------------------------------
+ 2023-10-25 08:47:20.185945+00
+(1 row)
+
+test2=# \d persion2;
+                                        Table "public.persion2"
+     Column      |         Type          | Collation | Nullable |               Default                
+-----------------+-----------------------+-----------+----------+--------------------------------------
+ id              | bigint                |           | not null | nextval('persion2_id_seq'::regclass)
+ first_name      | character varying(50) |           | not null | 
+ last_name       | character varying(50) |           | not null | 
+ email           | character varying(50) |           |          | 
+ gender          | character varying(50) |           | not null | 
+ date            | date                  |           |          | 
+ contry_of_barth | character varying(50) |           |          | 
+Indexes:
+    "persion2_pkey" PRIMARY KEY, btree (id)
+
+test2=# select first_name, last_name, gender, date, age(now(),date) as age from persion2;
+ first_name |     last_name     |   gender    |    date    |               age               
+------------+-------------------+-------------+------------+---------------------------------
+ Iormina    | Dignan            | Female      | 2022-06-30 | 3 mons 25 days 08:50:57.292774
+ Jamie      | Fossitt           | Female      | 2022-02-14 | 8 mons 11 days 08:50:57.292774
+ Egan       | Gullam            | Male        | 2022-07-25 | 3 mons 08:50:57.292774
+ Tracey     | Dauby             | Male        | 2022-10-05 | 20 days 08:50:57.292774
+ Paton      | Southern          | Male        | 2022-09-16 | 1 mon 9 days 08:50:57.292774
+ Alain      | Caghy             | Male        | 2022-06-09 | 4 mons 16 days 08:50:57.292774
+ Meta       | Martugin          | Female      | 2022-06-08 | 4 mons 17 days 08:50:57.292774
+ Beltran    | Stothart          | Male        | 2022-09-15 | 1 mon 10 days 08:50:57.292774
+ Catharina  | Sangwine          | Female      | 2022-05-10 | 5 mons 15 days 08:50:57.292774
+ Curt       | Annable           | Male        | 2022-03-27 | 6 mons 29 days 08:50:57.292774
+ Joyann     | Hassur            | Female      | 2022-02-26 | 7 mons 27 days 08:50:57.292774
+ Mallory    | Walkden           | Male        | 2022-08-03 | 2 mons 22 days 08:50:57.292774
+ Viva       | Pherps            | Female      | 2022-10-15 | 10 days 08:50:57.292774
+ Cyndi      | McLeoid           | Female      | 2022-09-24 | 1 mon 1 day 08:50:57.292774
+ Bianca     | Pittle            | Female      | 2022-05-06 | 5 mons 19 days 08:50:57.292774
+ Daryn      | Bladen            | Female      | 2022-03-24 | 7 mons 1 day 08:50:57.292774
+ Donnajean  | Grzelczak         | Female      | 2022-04-20 | 6 mons 5 days 08:50:57.292774
+ Stanwood   | Richardeau        | Male        | 2021-11-11 | 11 mons 14 days 08:50:57.292774
+ Nestor     | Kenningham        | Male        | 2022-01-28 | 8 mons 28 days 08:50:57.292774
+ Eda        | Readhead          | Female      | 2022-02-08 | 8 mons 17 days 08:50:57.292774
+ Milt       | Sonner            | Male        | 2022-04-12 | 6 mons 13 days 08:50:57.292774
+ Horatius   | Lerhinan          | Male        | 2022-05-09 | 5 mons 16 days 08:50:57.292774
+ Bondie     | Choulerton        | Male        | 2022-03-08 | 7 mons 17 days 08:50:57.292774
+ Rochelle   | Jeroch            | Female      | 2022-09-15 | 1 mon 10 days 08:50:57.292774
+ Orv        | Rhodef            | Non-binary  | 2022-01-10 | 9 mons 15 days 08:50:57.292774
+ Sergei     | Stearley          | Male        | 2022-08-28 | 1 mon 28 days 08:50:57.292774
+ Mattie     | Hunter            | Female      | 2021-11-21 | 11 mons 4 days 08:50:57.292774
+ Stacy      | Flexman           | Male        | 2022-03-19 | 7 mons 6 days 08:50:57.292774
+ Xaviera    | Maier             | Female      | 2021-12-14 | 10 mons 11 days 08:50:57.292774
+ Gordon     | Sneyd             | Male        | 2022-01-16 | 9 mons 9 days 08:50:57.292774
+ Lottie     | Kenshole          | Female      | 2022-05-06 | 5 mons 19 days 08:50:57.292774
+ Odelle     | Smallshaw         | Female      | 2022-08-24 | 2 mons 1 day 08:50:57.292774
+ Janka      | Westhofer         | Female      | 2022-06-15 | 4 mons 10 days 08:50:57.292774
+ Blaine     | Richardson        | Male        | 2022-09-19 | 1 mon 6 days 08:50:57.292774
+ Lindsey    | Matitiaho         | Male        | 2022-04-26 | 5 mons 29 days 08:50:57.292774
+ Lara       | Tyce              | Female      | 2021-12-24 | 10 mons 1 day 08:50:57.292774
+ Loutitia   | Palmar            | Genderfluid | 2021-11-22 | 11 mons 3 days 08:50:57.292774
+ Jasmine    | Balog             | Female      | 2022-10-22 | 3 days 08:50:57.292774
+ Karyn      | Whitney           | Female      | 2022-04-20 | 6 mons 5 days 08:50:57.292774
+ Standford  | Collihole         | Male        | 2022-02-02 | 8 mons 23 days 08:50:57.292774
+ Anthia     | Sprason           | Female      | 2022-09-10 | 1 mon 15 days 08:50:57.292774
+ Tabby      | East              | Male        | 2022-03-12 | 7 mons 13 days 08:50:57.292774
+ Hilda      | Mewett            | Female      | 2022-06-11 | 4 mons 14 days 08:50:57.292774
+ Devy       | Stubs             | Male        | 2022-01-16 | 9 mons 9 days 08:50:57.292774
+ Forbes     | Orta              | Male        | 2022-08-20 | 2 mons 5 days 08:50:57.292774
+ Niles      | Higgen            | Male        | 2022-05-28 | 4 mons 28 days 08:50:57.292774
+ Netti      | Manuely           | Female      | 2022-03-21 | 7 mons 4 days 08:50:57.292774
+ Kass       | Worton            | Female      | 2022-10-23 | 2 days 08:50:57.292774
+ Grayce     | Aldington         | Female      | 2022-02-26 | 7 mons 27 days 08:50:57.292774
+ Juliane    | Pudan             | Bigender    | 2022-03-31 | 6 mons 25 days 08:50:57.292774
+ Gretal     | Alforde           | Female      | 2022-10-12 | 13 days 08:50:57.292774
+ Wallas     | Gobbet            | Male        | 2022-03-25 | 7 mons 08:50:57.292774
+ Wenonah    | Clinning          | Polygender  | 2021-12-01 | 10 mons 24 days 08:50:57.292774
+ Olav       | Tebbe             | Male        | 2022-07-03 | 3 mons 22 days 08:50:57.292774
+ Salim      | Applewhaite       | Male        | 2022-07-02 | 3 mons 23 days 08:50:57.292774
+ Tracie     | Kitchingham       | Male        | 2021-12-31 | 9 mons 25 days 08:50:57.292774
+ Karlan     | Sherwin           | Male        | 2022-10-09 | 16 days 08:50:57.292774
+ Lew        | Craker            | Male        | 2022-01-17 | 9 mons 8 days 08:50:57.292774
+ Laurie     | Geoghegan         | Male        | 2022-06-12 | 4 mons 13 days 08:50:57.292774
+ Stephan    | Allawy            | Male        | 2022-07-07 | 3 mons 18 days 08:50:57.292774
+ Rouvin     | Thunnerclef       | Male        | 2022-04-07 | 6 mons 18 days 08:50:57.292774
+ Wileen     | Dowdney           | Female      | 2021-12-15 | 10 mons 10 days 08:50:57.292774
+ Yorgos     | Kunzler           | Male        | 2022-07-21 | 3 mons 4 days 08:50:57.292774
+ Kettie     | Golden of Ireland | Female      | 2021-12-29 | 9 mons 27 days 08:50:57.292774
+ Leola      | Clashe            | Female      | 2022-02-15 | 8 mons 10 days 08:50:57.292774
+ Gabi       | Giotto            | Non-binary  | 2022-09-29 | 26 days 08:50:57.292774
+ Teodoor    | Ellin             | Male        | 2021-11-30 | 10 mons 25 days 08:50:57.292774
+ Free       | Mattevi           | Male        | 2022-09-05 | 1 mon 20 days 08:50:57.292774
+ Jacklyn    | Folli             | Female      | 2022-06-06 | 4 mons 19 days 08:50:57.292774
+ Darnell    | Matysik           | Male        | 2022-10-19 | 6 days 08:50:57.292774
+ Kalli      | Keirle            | Female      | 2021-12-04 | 10 mons 21 days 08:50:57.292774
+ Abie       | Kempstone         | Male        | 2022-01-28 | 8 mons 28 days 08:50:57.292774
+ Ari        | Sadler            | Male        | 2022-02-08 | 8 mons 17 days 08:50:57.292774
+ Isaiah     | Wickenden         | Male        | 2022-04-25 | 6 mons 08:50:57.292774
+ Torrey     | Waterhowse        | Male        | 2022-05-23 | 5 mons 2 days 08:50:57.292774
+ Bonnie     | Branca            | Female      | 2022-01-31 | 8 mons 25 days 08:50:57.292774
+ Zacharias  | Hinckley          | Male        | 2022-09-07 | 1 mon 18 days 08:50:57.292774
+ Slade      | Shorrock          | Male        | 2021-10-26 | 11 mons 30 days 08:50:57.292774
+ Ricard     | Attrey            | Male        | 2022-04-01 | 6 mons 24 days 08:50:57.292774
+ Euell      | Dagger            | Male        | 2022-02-03 | 8 mons 22 days 08:50:57.292774
+ Stanford   | Britt             | Male        | 2022-06-09 | 4 mons 16 days 08:50:57.292774
+ Maurise    | Dimitrescu        | Female      | 2022-02-12 | 8 mons 13 days 08:50:57.292774
+ Toddie     | Crews             | Male        | 2022-07-17 | 3 mons 8 days 08:50:57.292774
+ Milly      | McAsgill          | Female      | 2022-04-07 | 6 mons 18 days 08:50:57.292774
+ Rob        | Jeannel           | Male        | 2021-11-26 | 10 mons 29 days 08:50:57.292774
+ Maitilde   | Bayles            | Female      | 2022-01-13 | 9 mons 12 days 08:50:57.292774
+ Drusie     | Scoon             | Female      | 2022-07-02 | 3 mons 23 days 08:50:57.292774
+ Gratiana   | Lille             | Genderqueer | 2022-09-20 | 1 mon 5 days 08:50:57.292774
+ Flin       | Saer              | Male        | 2022-03-22 | 7 mons 3 days 08:50:57.292774
+ Duke       | Curwood           | Male        | 2022-02-19 | 8 mons 6 days 08:50:57.292774
+ Dorisa     | Grute             | Female      | 2022-03-01 | 7 mons 24 days 08:50:57.292774
+ Amery      | Zeale             | Male        | 2022-06-03 | 4 mons 22 days 08:50:57.292774
+ Dmitri     | Andrat            | Male        | 2022-07-10 | 3 mons 15 days 08:50:57.292774
+ Windy      | MacAlpine         | Female      | 2022-09-14 | 1 mon 11 days 08:50:57.292774
+ Chloe      | Rawsthorne        | Female      | 2022-07-19 | 3 mons 6 days 08:50:57.292774
+ Morten     | Donan             | Male        | 2022-02-06 | 8 mons 19 days 08:50:57.292774
+ Wye        | Witchard          | Male        | 2022-06-24 | 4 mons 1 day 08:50:57.292774
+ Paton      | Forsdyke          | Male        | 2022-05-13 | 5 mons 12 days 08:50:57.292774
+ Courtnay   | Lowthorpe         | Female      | 2022-10-13 | 12 days 08:50:57.292774
+ Theresita  | MacDermot         | Female      | 2022-08-19 | 2 mons 6 days 08:50:57.292774
+(100 rows)
+
+test2=# select distinct gender from persion2;
+   gender    
+-------------
+ Genderqueer
+ Bigender
+ Genderfluid
+ Male
+ Polygender
+ Non-binary
+ Female
+(7 rows)
+
+test2=# \d persion1
+                                      Table "public.persion1"
+   Column   |          Type          | Collation | Nullable |               Default                
+------------+------------------------+-----------+----------+--------------------------------------
+ id         | bigint                 |           | not null | nextval('persion1_id_seq'::regclass)
+ first_name | character varying(50)  |           | not null | 
+ last_name  | character varying(50)  |           |          | 
+ gender     | character varying(7)   |           |          | 
+ email      | character varying(150) |           |          | 
+ date       | date                   |           |          | 
+Indexes:
+    "persion1_pkey" PRIMARY KEY, btree (id)
+
+test2=# \d persion
+                         Table "public.persion"
+    Column     |         Type          | Collation | Nullable | Default 
+---------------+-----------------------+-----------+----------+---------
+ id            | integer               |           | not null | 
+ fname         | character varying(20) |           | not null | 
+ lname         | character varying(20) |           |          | 
+ gender        | character varying(1)  |           |          | 
+ date_of_barth | date                  |           |          | 
+Indexes:
+    "persion_pkey" PRIMARY KEY, btree (id)
+Check constraints:
+    "persion_gender_check" CHECK (gender::text = ANY (ARRAY['m'::character varying, 'f'::character varying]::text[]))
+
+test2=# select * from persion1;
+ id | first_name | last_name | gender |   email    |    date    
+----+------------+-----------+--------+------------+------------
+  1 | jake       | jone      | male   | jake@gmail | 1990-01-10
+  2 | anne       | smith     | female |            | 1999-10-14
+(2 rows)
+
+test2=# update persion1 set email='anne@yahoo.com' where id = 2;
+UPDATE 1
+test2=# update persion1 email='anne1@yahoo.com' where id = 2;
+ERROR:  syntax error at or near "="
+LINE 1: update persion1 email='anne1@yahoo.com' where id = 2;
+                             ^
+test2=# update persion1 email='anne1@yahoo.com' where id = 2;
+ERROR:  syntax error at or near "="
+LINE 1: update persion1 email='anne1@yahoo.com' where id = 2;
+                             ^
+test2=# create table persion4 ( 
+test2(# id bigserial primary key,
+test2(# first-name varchar(50) not null, 
+test2(# last_name vercahr(50) not null,
+test2(# gender varchar(7) not null,
+test2(# email varchar(100),
+test2(# date_of_birth date not null,
+test2(# car_id bigint references car (id),
+test2(# unique(car_id)
+test2(# );
+ERROR:  syntax error at or near "-"
+LINE 3: first-name varchar(50) not null, 
+             ^
+test2=# create table persion4 (
+id bigserial primary key,
+first_name varchar(50) not null,
+last_name vercahr(50) not null,
+gender varchar(7) not null,
+email varchar(100),
+date_of_birth date not null,
+car_id bigint references car (id),
+unique(car_id)
+);
+test2(# );
+CREATE TABLE
+test2=# select * from persion4;
+--
+(0 rows)
+
+test2=# drop table persion4;
+DROP TABLE
+test2=# create table persion4 (
+test2(# id bigserial primary key,
+test2(# first_name varchar(50) not null,
+test2(# last_name vercahr(50) not null,
+test2(# gender varchar(7) not null,
+test2(# email varchar(100),
+test2(# date_of_birth date not null,
+test2(# car_id bigint references car (id),
+test2(# unique(car_id)
+test2(# );
+ERROR:  type "vercahr" does not exist
+LINE 4: last_name vercahr(50) not null,
+                  ^
+test2=# create table persion4 (
+id bigserial primary key,
+first_name varchar(50) not null,
+last_name varcahr(50) not null,
+gender varchar(7) not null,
+email varchar(100),
+date_of_birth date not null,
+car_id bigint references car (id),
+unique(car_id)
+);
+test2(# );
+CREATE TABLE
+test2=# drop table persion4;
+DROP TABLE
+test2=# 
+test2=# create table persion4 (
+test2(# id bigserial primary key,
+test2(# first_name varchar(50) not null,
+test2(# last_name varcahr(50) not null,
+test2(# gender varchar(7) not null,
+test2(# email varchar(100),
+test2(# date_of_birth date not null,
+test2(# car_id bigint references car (id),
+test2(# unique(car_id)
+test2(# );
+ERROR:  type "varcahr" does not exist
+LINE 4: last_name varcahr(50) not null,
+                  ^
+test2=# create table persion4 (
+id bigserial primary key,
+first_name varchar(50) not null,
+last_name varchar(50) not null,
+gender varchar(7) not null,
+email varchar(100),
+date_of_birth date not null,
+car_id bigint references car (id),
+unique(car_id)
+);
+test2(# )jbj;
+ERROR:  syntax error at or near "jbj"
+LINE 2: )jbj;
+         ^
+test2=# create table persion4 (
+test2(# id bigserial primary key,
+test2(# first_name varchar(50) not null,
+test2(# last_name varcahr(50) not null,
+test2(# gender varchar(7) not null,
+test2(# email varchar(100),
+test2(# date_of_birth date not null,
+test2(# car_id bigint references car (id),
+test2(# unique(car_id)
+test2(# );
+ERROR:  type "varcahr" does not exist
+LINE 4: last_name varcahr(50) not null,
+                  ^
+test2=# create table persion4 (
+id bigserial primary key,
+first_name varchar(50) not null,
+last_name varchar(50) not null,
+gender varchar(7) not null,
+email varchar(100),
+date_of_birth date not null,
+car_id bigint references car (id),
+unique(car_id)
+););
+test2(# );
+CREATE TABLE
+test2=# drop table persion4;
+DROP TABLE
+test2=# create table persion4 (
+test2(# id bigserial primary key,
+test2(# first_name varchar(50) not null,
+test2(# last_name varchar(50) not null,
+test2(# gender varchar(7) not null,
+test2(# email varchar(100),
+test2(# date_of_birth date not null,
+test2(# car_id bigint references car (id),
+test2(# unique(car_id)
+test2(# );
+CREATE TABLE
+test2=# select * from persion4;
+ id | first_name | last_name | gender | email | date_of_birth | car_id 
+----+------------+-----------+--------+-------+---------------+--------
+(0 rows)
+
+test2=# create table car2 (
+test2(# id bigserial primary key,
+test2(# make varchar(100) not null,
+test2(# model varchar(100) not null,
+test2(# price numeric(19, 2) not null
+test2(# );
+CREATE TABLE
+test2=#  insert into car2 ( make, model, price) values ( 'BMW', 'Z8', 500000.41);
+INSERT 0 1
+test2=# insert into car ( make, model, price) values ( 'Saab', '9-5', 600000.3547);
+ERROR:  duplicate key value violates unique constraint "car_pkey"
+DETAIL:  Key (id)=(1) already exists.
+test2=# insert into car2 ( make, model, price) values ( 'Saab', '9-5', 600000.3547);
+INSERT 0 1
+test2=# drop table persion4;
+DROP TABLE
+test2=# reate table persion4 (
+test2(# test2(# id bigserial primary key,
+test2(# test2(# first_name varchar(50) not null,
+test2(# test2(# last_name varchar(50) not null,
+test2(# test2(# gender varchar(7) not null,
+test2(# test2(# email varchar(100),
+test2(# test2(# date_of_birth date not null,
+test2(# test2(# car_id bigint references car (id),
+test2(# test2(# unique(car_id)
+test2(# );fughbl
+test2(# 
+test2(# );hviv
+test2(# )
+test2(# ;
+test2(# );
+test2(# )));
+test2(#  ekkvev;l
+test2(# 
+test2(# select * fro exv;
+test2(# );
+test2(# );
+ERROR:  syntax error at or near "reate"
+LINE 1: reate table persion4 (
+        ^
+test2=# create table persion4 (
+id bigserial primary key,
+first_name varchar(50) not null,
+last_name varchar(50) not null,
+gender varchar(7) not null,
+email varchar(100),
+date_of_birth date not null,
+car_id bigint references car2 (id),
+unique(car_id)
+)
+test2(# );
+CREATE TABLE
+test2=# select * from persion4;
+--
+(0 rows)
+
+test2=# drop table persion4;
+DROP TABLE
+test2=# create table persion4 (
+test2(# id bigserial primary key,
+test2(# first_name varchar(50) not null,
+test2(# last_name varchar(50) not null,
+test2(# gender varchar(7) not null,
+test2(# email varchar(100),
+test2(# date_of_birth date not null,
+test2(# car_id bigint references car2 (id),
+test2(# unique(car_id)
+test2(# );
+CREATE TABLE
+test2=# select * from car2;
+ id | make | model |   price   
+----+------+-------+-----------
+  1 | BMW  | Z8    | 500000.41
+  2 | Saab | 9-5   | 600000.35
+(2 rows)
+
+test2=# select * from persion4;
+ id | first_name | last_name | gender | email | date_of_birth | car_id 
+----+------------+-----------+--------+-------+---------------+--------
+(0 rows)
+
+test2=# insert into persion4 (first_name, last_name, email, gender, date_of_birth) values ('Torrey', 'Waterhowse
+', 'twaterhowse22@paypal.com', 'Male', '2022-05-23');
+INSERT 0 1
+test2=# insert into persion2 (first_name, last_name, email, gender, date, contry_of_barth) values ('Daryn', 'Bladen', 'dbladenf@newyorker.com', 'Female', '2022-03-24', 'Peru');
+INSERT 0 1
+test2=# insert into persion2 (first_name, last_name, email, gender, date, contry_of_barth) values ('Daryn', 'Bladen', 'dbladenf@newyorker.com', 'Female', '2022-03-24', 'Peru');
+INSERT 0 1
+test2=# insert into persion4 (first_name, last_name, email, gender, date_of_birth)  values ('Daryn', 'Bladen', 'dbladenf@newyorker.com', 'Female', '2022-03-24');
+INSERT 0 1
+test2=# insert into persion4 (first_name, last_name, email, gender, date_of_birth) values ('Viva', 'Pherps', 'vpherpsc@usgs.gov', 'Female', '2022-10-15');
+INSERT 0 1
+test2=# select * from persion4;
+ id | first_name | last_name  | gender |          email           | date_of_birth | car_id 
+----+------------+------------+--------+--------------------------+---------------+--------
+  1 | Torrey     | Waterhowse | Male   | twaterhowse22@paypal.com | 2022-05-23    |       
+  2 | Daryn      | Bladen     | Female | dbladenf@newyorker.com   | 2022-03-24    |       
+  3 | Viva       | Pherps     | Female | vpherpsc@usgs.gov        | 2022-10-15    |       
+(3 rows)
+
+test2=# delete email form persion4 where id =3;
+ERROR:  syntax error at or near "email"
+LINE 1: delete email form persion4 where id =3;
+               ^
+test2=# select * from car2;
+ id | make | model |   price   
+----+------+-------+-----------
+  1 | BMW  | Z8    | 500000.41
+  2 | Saab | 9-5   | 600000.35
+(2 rows)
+
+test2=#  update persion set car_id=2 where id = 3;
+ERROR:  column "car_id" of relation "persion" does not exist
+LINE 1: update persion set car_id=2 where id = 3;
+                           ^
+test2=#  update persion4 set car_id=2 where id = 3;
+UPDATE 1
+test2=#  update persion4 set car_id=1 where id = 1;
+UPDATE 1
+test2=#  update persion4 set car_id=2 where id = 1;
+ERROR:  duplicate key value violates unique constraint "persion4_car_id_key"
+DETAIL:  Key (car_id)=(2) already exists.
+test2=# select * from car2;
+ id | make | model |   price   
+----+------+-------+-----------
+  1 | BMW  | Z8    | 500000.41
+  2 | Saab | 9-5   | 600000.35
+(2 rows)
+
+test2=# select * from persion4;
+ id | first_name | last_name  | gender |          email           | date_of_birth | car_id 
+----+------------+------------+--------+--------------------------+---------------+--------
+  2 | Daryn      | Bladen     | Female | dbladenf@newyorker.com   | 2022-03-24    |       
+  3 | Viva       | Pherps     | Female | vpherpsc@usgs.gov        | 2022-10-15    |      2
+  1 | Torrey     | Waterhowse | Male   | twaterhowse22@paypal.com | 2022-05-23    |      1
+(3 rows)
+
+test2=#  update persion4 set car_id=4 where id = 1;
+ERROR:  insert or update on table "persion4" violates foreign key constraint "persion4_car_id_fkey"
+DETAIL:  Key (car_id)=(4) is not present in table "car2".
+test2=# select * form persion join car on persion4.car_id = car2.id;
+ERROR:  syntax error at or near "form"
+LINE 1: select * form persion join car on persion4.car_id = car2.id;
+                 ^
+test2=# select * from persion join car on persion4.car_id = car2.id;
+ERROR:  missing FROM-clause entry for table "persion4"
+LINE 1: select * from persion join car on persion4.car_id = car2.id;
+                                          ^
+test2=# select * from persion4 join car on persion4.car_id = car2.id;
+ERROR:  missing FROM-clause entry for table "car2"
+LINE 1: ...elect * from persion4 join car on persion4.car_id = car2.id;
+                                                               ^
+test2=# select * from persion4 join car on persion4.car_id = car2.id;
+ERROR:  missing FROM-clause entry for table "car2"
+LINE 1: ...elect * from persion4 join car on persion4.car_id = car2.id;
+                                                               ^
+test2=# select * from persion4,car2 join car on persion4.car_id = car2.id;
+ERROR:  invalid reference to FROM-clause entry for table "persion4"
+LINE 1: select * from persion4,car2 join car on persion4.car_id = ca...
+                                                ^
+HINT:  There is an entry for table "persion4", but it cannot be referenced from this part of the query.
+test2=# select * from persion4 join car on persion4.car_id = car2.id;
+ERROR:  missing FROM-clause entry for table "car2"
+LINE 1: ...elect * from persion4 join car on persion4.car_id = car2.id;
+                                                               ^
+test2=# select * from persion4,car2 join car on persion4.car_id = car2.id;
+ERROR:  invalid reference to FROM-clause entry for table "persion4"
+LINE 1: select * from persion4,car2 join car on persion4.car_id = ca...
+                                                ^
+HINT:  There is an entry for table "persion4", but it cannot be referenced from this part of the query.
+test2=# select * * from persion4,car2 join car on persion4.car_id = car2.id;
+ERROR:  syntax error at or near "*"
+LINE 1: select * * from persion4,car2 join car on persion4.car_id = ...
+                 ^
+test2=# select p.* , c.*
+test2-# from persion4 p,car2 c
+test2-# on where p.car_id = c.id;
+ERROR:  syntax error at or near "on"
+LINE 3: on where p.car_id = c.id;
+        ^
+test2=# select * from persion4 inner join car2 on car2.id = persion4.car_id;
+ id | first_name | last_name  | gender |          email           | date_of_birth | car_id | id | make | model |   price   
+----+------------+------------+--------+--------------------------+---------------+--------+----+------+-------+-----------
+  1 | Torrey     | Waterhowse | Male   | twaterhowse22@paypal.com | 2022-05-23    |      1 |  1 | BMW  | Z8    | 500000.41
+  3 | Viva       | Pherps     | Female | vpherpsc@usgs.gov        | 2022-10-15    |      2 |  2 | Saab | 9-5   | 600000.35
+(2 rows)
+
+test2=# select * from pg_a
+test2-# ;
+ERROR:  relation "pg_a" does not exist
+LINE 1: select * from pg_a
+                      ^
+test2=# select * from pg_a
+test2-# ;
+ERROR:  relation "pg_a" does not exist
+LINE 1: select * from pg_a
+                      ^
+test2=# select * from pg_a;
+ERROR:  relation "pg_a" does not exist
+LINE 1: select * from pg_a;
+                      ^
+test2=# select * from pg_available_extension;
+ERROR:  relation "pg_available_extension" does not exist
+LINE 1: select * from pg_available_extension;
+                      ^
+test2=# select * from persion4 , car2 where car_id = id;
+ERROR:  column reference "id" is ambiguous
+LINE 1: select * from persion4 , car2 where car_id = id;
+                                                     ^
+test2=# select * from car2;
+ id | make | model |   price   
+----+------+-------+-----------
+  1 | BMW  | Z8    | 500000.41
+  2 | Saab | 9-5   | 600000.35
+(2 rows)
+
+test2=# select * from persion4;
+ id | first_name | last_name  | gender |          email           | date_of_birth | car_id 
+----+------------+------------+--------+--------------------------+---------------+--------
+  2 | Daryn      | Bladen     | Female | dbladenf@newyorker.com   | 2022-03-24    |       
+  3 | Viva       | Pherps     | Female | vpherpsc@usgs.gov        | 2022-10-15    |      2
+  1 | Torrey     | Waterhowse | Male   | twaterhowse22@paypal.com | 2022-05-23    |      1
+(3 rows)
+
+test2=# select persion4.*,car2.* from persion4 join car2 on persion4.car_id=car2.id;
+ id | first_name | last_name  | gender |          email           | date_of_birth | car_id | id | make | model |   price   
+----+------------+------------+--------+--------------------------+---------------+--------+----+------+-------+-----------
+  1 | Torrey     | Waterhowse | Male   | twaterhowse22@paypal.com | 2022-05-23    |      1 |  1 | BMW  | Z8    | 500000.41
+  3 | Viva       | Pherps     | Female | vpherpsc@usgs.gov        | 2022-10-15    |      2 |  2 | Saab | 9-5   | 600000.35
+(2 rows)
+
+test2=# select * from persion4 left outer join car2 on persion4.car_id=car2.id;
+ id | first_name | last_name  | gender |          email           | date_of_birth | car_id | id | make | model |   price   
+----+------------+------------+--------+--------------------------+---------------+--------+----+------+-------+-----------
+  1 | Torrey     | Waterhowse | Male   | twaterhowse22@paypal.com | 2022-05-23    |      1 |  1 | BMW  | Z8    | 500000.41
+  3 | Viva       | Pherps     | Female | vpherpsc@usgs.gov        | 2022-10-15    |      2 |  2 | Saab | 9-5   | 600000.35
+  2 | Daryn      | Bladen     | Female | dbladenf@newyorker.com   | 2022-03-24    |        |    |      |       |          
+(3 rows)
+
+test2=# \d
+              List of relations
+ Schema |      Name       |   Type   | Owner  
+--------+-----------------+----------+--------
+ public | car             | table    | axelor
+ public | car2            | table    | axelor
+ public | car2_id_seq     | sequence | axelor
+ public | car_id_seq      | sequence | axelor
+ public | compane         | table    | axelor
+ public | department      | table    | axelor
+ public | persion         | table    | axelor
+ public | persion1        | table    | axelor
+ public | persion1_id_seq | sequence | axelor
+ public | persion2        | table    | axelor
+ public | persion2_id_seq | sequence | axelor
+ public | persion4        | table    | axelor
+ public | persion4_id_seq | sequence | axelor
+ public | pro             | table    | axelor
+ public | stu             | table    | axelor
+(15 rows)
+
+test2=# select * from compane;
+ cnam | id 
+------+----
+(0 rows)
+
+test2=# drop table compane;
+DROP TABLE
+test2=# select * from pro;
+ pid |        pname         | price 
+-----+----------------------+-------
+ 101 | PAST                 |    20
+ 102 | BRUS                 |    30
+(2 rows)
+
+test2=# delete from pro where price = 30;
+DELETE 1
+test2=# select * from pro;
+ pid |        pname         | price 
+-----+----------------------+-------
+ 101 | PAST                 |    20
+(1 row)
+
+test2=# create view myview as select * from pro;
+CREATE VIEW
+test2=# select * from view;
+ERROR:  relation "view" does not exist
+LINE 1: select * from view;
+                      ^
+test2=# select * from myview;
+ pid |        pname         | price 
+-----+----------------------+-------
+ 101 | PAST                 |    20
+(1 row)
+
+test2=# \d
+              List of relations
+ Schema |      Name       |   Type   | Owner  
+--------+-----------------+----------+--------
+ public | car             | table    | axelor
+ public | car2            | table    | axelor
+ public | car2_id_seq     | sequence | axelor
+ public | car_id_seq      | sequence | axelor
+ public | department      | table    | axelor
+ public | myview          | view     | axelor
+ public | persion         | table    | axelor
+ public | persion1        | table    | axelor
+ public | persion1_id_seq | sequence | axelor
+ public | persion2        | table    | axelor
+ public | persion2_id_seq | sequence | axelor
+ public | persion4        | table    | axelor
+ public | persion4_id_seq | sequence | axelor
+ public | pro             | table    | axelor
+ public | stu             | table    | axelor
+(15 rows)
+
+test2=# select * from car2_id_seq;
+ last_value | log_cnt | is_called 
+------------+---------+-----------
+          2 |      31 | t
+(1 row)
+
+test2=# select * from myview;
+ pid |        pname         | price 
+-----+----------------------+-------
+ 101 | PAST                 |    20
+(1 row)
+
+test2=# begin;
+BEGIN
+test2=*# insert into pro values (102,'hw',40);
+INSERT 0 1
+test2=*# rollback;
+ROLLBACK
+test2=# insert into pro values (102,'hw',40);
+INSERT 0 1
+test2=# insert into pro values (103,'wp',70);
+INSERT 0 1
+test2=# rollback;
+WARNING:  there is no transaction in progress
+ROLLBACK
+test2=# commit;
+WARNING:  there is no transaction in progress
+COMMIT
+test2=# select * from pro;
+ pid |        pname         | price 
+-----+----------------------+-------
+ 101 | PAST                 |    20
+ 102 | hw                   |    40
+ 103 | wp                   |    70
+(3 rows)
+
+test2=# 
+test2=# 
+test2=# select * from pro;
+ pid |        pname         | price 
+-----+----------------------+-------
+ 101 | PAST                 |    20
+ 102 | hw                   |    40
+ 103 | wp                   |    70
+(3 rows)
+
+test2=# 
+
+
