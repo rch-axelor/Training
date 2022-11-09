@@ -1,0 +1,10 @@
+package com.Axelor.Demo;
+
+public class SquareRequest {
+DrawSqure drawSqure = new DrawSqure();
+
+   public void makeRequest()
+   {
+	   drawSqure.draw();
+   }
+}

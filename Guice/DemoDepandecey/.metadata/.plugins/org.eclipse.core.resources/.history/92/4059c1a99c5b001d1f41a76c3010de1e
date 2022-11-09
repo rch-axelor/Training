@@ -1,0 +1,16 @@
+package com.Axelor.demo2;
+
+public class SquareRequest {        /*-----------<----Dependent----------------*/
+
+	DrawShap d;
+	
+	public void squreRequest(DrawShap d)
+	{
+		this.d=d;
+	}
+	
+	public void makeRequest()
+	{
+		d.draw();
+	}
+}

@@ -1,0 +1,11 @@
+package com.Axelor.Demo;
+
+public class DrawSqure implements DrawShap{
+
+	@Override
+	public void draw() {
+		System.out.println("squre");
+		
+	}
+
+}

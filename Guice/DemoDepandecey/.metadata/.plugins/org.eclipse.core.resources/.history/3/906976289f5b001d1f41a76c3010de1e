@@ -1,0 +1,18 @@
+package com.Axelor.demo2;
+
+public class Test {
+
+	public static void main(String[] args) {
+		SquareRequest request = new SquareRequest();
+		DrawShap drawShap = new DrawSqure();
+		request.squreRequest(drawShap);
+		request.makeRequest();
+		
+		SquareRequest request1= new SquareRequest();
+		DrawShap drawShap1 = new DrawBigSquare();
+		request.squreRequest(drawShap1);
+		request.makeRequest();
+
+	}
+
+}

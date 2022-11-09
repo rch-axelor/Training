@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.Axelor.Demo.DrawShap"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="com.Axelor.Demo.SquareRequest"/>
+    <fullyQualifiedTypeName name="com.Axelor.Demo.DrawSqure"/>
+    <fullyQualifiedTypeName name="com.Axelor.demo2.DrawShap"/>
+    <fullyQualifiedTypeName name="com.Axelor.demo2.DrawSqure"/>
+    <fullyQualifiedTypeName name="com.Axelor.demo2.DrawBigSquare"/>
+    <fullyQualifiedTypeName name="com.Axelor.demo2.SquareRequest"/>
+</qualifiedTypeNameHistroy>
