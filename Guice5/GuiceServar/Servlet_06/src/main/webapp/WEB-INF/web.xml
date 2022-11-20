@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app>
+    <servlet>
+    <servlet-name>mno</servlet-name>
+    <servlet-class>com.Axelor.six.MyServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+     <servlet-name>mno</servlet-name>
+     <url-pattern>/home</url-pattern>
+    </servlet-mapping>
+    
+    <context-param>
+    <param-name>name</param-name>
+    <param-value>jaga</param-value>
+    </context-param>
+    
+    <context-param>
+    <param-name>phone</param-name>
+    <param-value>Samsung</param-value>
+    </context-param>
+    
+</web-app>
