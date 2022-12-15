@@ -7,9 +7,3 @@ test12345
 test12345
 test123456
 test123456
-by vishwa
-=================================================================
-by vishwa
-by vishwa
-by vishwa
-by vishwa
