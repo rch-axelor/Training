@@ -1,0 +1,39 @@
+From 98cb14db4ebe90edb289e3a17d243e979269097e Mon Sep 17 00:00:00 2001
+From: Sonu <s.gupta@axelor.com>
+Date: Fri, 16 Dec 2022 13:07:35 +0530
+Subject: [PATCH] text file is created with all Commands
+
+---
+ text.txt | 20 ++++++++++++++++++++
+ 1 file changed, 20 insertions(+)
+ create mode 100644 text.txt
+
+diff --git a/text.txt b/text.txt
+new file mode 100644
+index 0000000..772ea2f
+--- /dev/null
++++ b/text.txt
+@@ -0,0 +1,20 @@
++-->ls
++-->mkdir
++-->tree
++-->rebase
++-->merge
++-->rm
++-->sude
++-->touch
++-->rf
++-->vi
++-->sh
++-->cd
++-->git init
++-->git status
++-->git commit
++-->git push
++-->git remote
++-->git add
++-->git branch 
++-->git checkout
+-- 
+2.37.2
+

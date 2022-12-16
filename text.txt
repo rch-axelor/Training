@@ -1,0 +1,22 @@
+-->ls
+-->mkdir
+-->tree
+-->rebase
+-->merge
+-->rm
+-->sude
+-->touch
+-->rf
+-->vi
+-->sh
+-->cd
+-->git init
+-->git status
+-->git commit
+-->git push
+-->git remote
+-->git add
+-->git branch 
+-->git checkout
+-->git commit hard
+-->git diff
