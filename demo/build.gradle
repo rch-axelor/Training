@@ -1,0 +1,62 @@
+task copy(type: Copy, group: "Custom", description: "The sources are copied to dest directory") {  
+    from "src"  
+    into "dest"  
+}
+
+task hello{
+doFirst{
+println 'This is going first...'
+}
+doLast{
+println 'This is going last...'
+}
+}
+
+task convert{
+doLast{
+String abc = 'VishWa'
+println 'Original String:' + abc
+println 'UpperCase String:' + abc.toUpperCase()
+println 'LowerCase String;' + abc.toLowerCase()
+}
+}
+
+task count{
+doLast{
+10.times{
+print "$it"
+}
+}
+}
+
+task intro(dependsOn: hello){
+doLast{
+println 'I am Gradle...'
+}
+}
+
+task taskX(dependsOn: 'taskY'){
+doLast{
+println 'x task is printed..'
+}
+}
+
+task taskY(dependsOn: 'taskZ'){
+doLast{
+println 'y task is printed..'
+}
+}
+
+task taskZ{
+doLast{
+println 'z task is printed..'
+}
+}
+
+4.times { counter ->
+task "task$counter" {
+doLast{
+println "I am task number $counter"
+}
+}
+}
